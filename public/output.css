@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(56, 52, 41, 0.60),rgba(56, 52, 41, 0.60)), url(images/andrea-de-santis-HcKn6GmC8_k-unsplash.jpg);
+  background-position: center;
+}
