@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "tailwindcss -i src/styles.css -o public/output.css -w"
+    "build": "tailwindcss -i ./src/input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaseknis/starting-base.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaseknis/starting-base/issues"
+  },
+  "homepage": "https://github.com/Chaseknis/starting-base#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
