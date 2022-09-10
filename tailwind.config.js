@@ -28,21 +28,7 @@ module.exports = {
       xl:'1440px'
     },
     extend: {
-      gridColumn: {
-        'gridColumn-1': 'span 4 / span 7',
-      },
-      gridRow: {
-        'gridRow-1': 'span 1 / span 3',
-      },
-      gridTemplateColumns: {
-        '16': 'repeat(16, 1fr)',
-        'footer': '200px minmax(900px, 1fr) 100px',
-      },
-      gridTemplateRows: {
-        '6': 'repeat(6, 6rem)',
-        'layout': '200px minmax(900px, 1fr) 100px',
-      },
-      dropShadow: {
+    dropShadow: {
         'buttonShadow': '0 0.2rem 0.4rem rgba(0, 0, 0, 0.2)',
         'pageTextShadow': '0 0.1rem 0.3rem rgba(0, 0, 0, 0.2)',
         'heroShadow': '0 0.3rem 0.5rem rgba(0, 0, 0, 0.6)',
