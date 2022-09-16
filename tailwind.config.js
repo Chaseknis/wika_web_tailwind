@@ -55,7 +55,8 @@ module.exports = {
         lightBlack: 'rgba(0, 0, 0, 0.60)',
         Birch: 'rgb(56, 52, 41)',
         lightBirch: 'rgba(56, 52, 41, 0.60)',
-        dimWhite: 'rgb(245, 245, 245)'
+        dimWhite: 'rgb(245, 245, 245)',
+        lightGrey: 'rgb(244, 243, 242)',
       },
     },
   },
