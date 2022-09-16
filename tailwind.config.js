@@ -13,7 +13,7 @@ module.exports = {
       'tiny': '.75rem',
       'small': '.875',
       'base': '1rem',
-      'lg': '1.2rem',
+      'lg': '1.5rem',
       'xl': '2rem',
       '2xl': '2.75rem',
       '5xl': '4rem',

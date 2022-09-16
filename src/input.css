@@ -16,6 +16,10 @@
       -webkit-text-stroke: 1px rgba(225, 225, 225,.5);
       -webkit-text-fill-color: transparent;
     }
+    #banner h1 {
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        -webkit-text-fill-color: transparent;
+      }
     h1 {
         -webkit-text-stroke: 1px rgb(134, 113, 73);
         -webkit-text-fill-color: transparent;
