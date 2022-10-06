@@ -49,7 +49,7 @@
                 <div class="md:w-[100%]">
 
                     <h1 style="animation: movetext 1s 0.4s forwards;"
-                        class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-white leading-[55px] drop-shadow-heroShadow md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
+                        class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-white leading-[55px] drop-shadow-2xl md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
 
                         Your Professional Language Solution
                     </h1>
@@ -91,23 +91,10 @@
     <section id="about-us">
         <div class="max-w-[100%] overflow-hidden px-[16pt] max-h-[100vh] mt-[10%] md:px-[64px] sm:px-[50px] md:mt-[2rem]">
 
-            <div>
-                <div>
-                    <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
-                            
-                        About Us 
-                    </h1>
-        
-                    <h2 class="text-center text-xl py-[20px] font-HeaderFont font-bold text-black leading-[2rem]  drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
-        
-                        Home To Language Experts
-                    </h2>
-
-                </div>
-
-                <div class="md:max-w-[100%] md:flex md:flex-row">
+                <div class="md:max-w-[100%] pt-[2rem] md:flex md:flex-row">
                     
-                    <div class="md:w-[50%] grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 animate-pulse ">
+                    
+                    <div class="md:w-[50%] grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 ">
                         <img src="images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marissa-grootes-vdaJJbls3xE-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marcos-paulo-prado-_1QHEfxpWKM-unsplash.jpg" class="w-[40rem]" alt="">
@@ -118,6 +105,19 @@
                     </div>
     
                     <div class="max-w-[100%] md:max-w-[50%] md:pl-[5%]">
+
+                        <div>
+                            <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                                    
+                                About Us 
+                            </h1>
+                
+                            <h2 class="text-center text-xl py-[20px] font-HeaderFont font-bold text-black leading-[2rem]  drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[3rem]">
+                
+                                Home To Language Experts
+                            </h2>
+        
+                        </div>
                             
                         <p class="text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1.25rem] drop-shadow-pageTextShadow md:text-tiny md:text-left md:pb-[0.625rem]">
      
@@ -134,16 +134,13 @@
     
                 </div>
 
-            </div>
-
-
         </div>
 
     </section>
 
     <section id="industries">
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-white max-h-[100vh] md:px-[64px] sm:px-[50px]">
-            <div class="pt-[5%] md:pt-[2rem]">
+            <div class=" pt-[5%] md:pt-[2rem]">
                 <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
                             
                     Industries 
@@ -155,17 +152,65 @@
             </div>
             <div class="max-w-full grid grid-flow-row grid-cols-6 grid-rows-2 gap-4">
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="bg-orange-500 rounded-[10%] border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-outline-chattapat-/64/000000/external-retail-logistic-outline-chattapat-.png"/> 
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
-
-                            Retail
-                        </h3>
                     </div>
                 </div>
+
+
+                <div class="w-full flex justify-evenly mt-[1rem] ">
+                    <div class="w-[10rem] h-[15] shadow-2xl border-r-[0.5] relative">
+                        <div class="w-full h-full bg-lightBlackTense border-r-[0.5rem] ">
+                            <img src="images/pic2.jpg" alt="Translation">
+                        </div>
+                        <div class="absolute bottom-0 p-[0.5rem] shadow-xl opacity-0 hidden transition-all 0.3s ">
+                            <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                                Retail
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--.card-img-wrapper img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: 0.8;
+                    border-radius: 0.5rem;
+                    transition: opacity 0.3s;
+                }
+                .card:hover .card-img-wrapper img {
+                    opacity: 0.4;
+                }
+                .card:hover .card-info {
+                    bottom: 0.5rem;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .card-info h2 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    font-weight: 100;
+                    margin-bottom: 0.5rem;
+                    color:#867149;
+                }
+                .card-info p {
+                    font-family: 'Raleway', sans-serif; 
+                    font-size: 0.75rem;
+                    text-align: justify;
+                    line-height: 1rem;
+                    width: 15rem;  
+                    color:white;
+                    width: 80%;
+                    margin-bottom: 1rem;
+                
+
+
+
+
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="bg-orange-500 rounded-[10%] border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/64/000000/external-hospital-coronavirus-tulpahn-detailed-outline-tulpahn.png"/> 
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -175,7 +220,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-phatplus-lineal-phatplus/64/000000/external-manufacturing-factory-equipment-phatplus-lineal-phatplus.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -185,7 +230,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-glyph-wichaiwi/64/000000/external-holiday-reopening-country-glyph-wichaiwi.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -195,7 +240,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/64/000000/external-bank-banking-and-financial-xnimrodx-lineal-xnimrodx.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -205,7 +250,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/ios/50/000000/shopping-cart.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -215,7 +260,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/000000/external-learning-online-learning-nawicon-detailed-outline-nawicon.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -225,7 +270,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/wired/64/000000/garage.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -235,7 +280,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-phatplus-lineal-phatplus/64/000000/external-technology-factory-equipment-phatplus-lineal-phatplus.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -245,7 +290,7 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[4px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1px] border-dullBrown p-4">
 
                         <img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/000000/external-legal-document-business-management-smashingstocks-detailed-outline-smashing-stocks.png"/>
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
@@ -253,7 +298,7 @@
                             Legal
                         </h3>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 
@@ -362,8 +407,8 @@
                             grid-row: 1/3 ;"
                      class="h-[9rem] mb-[1rem]  sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fa-solid fa-language text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fa-solid fa-language text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Translation 
                             </h3>
                     </div>
@@ -376,8 +421,8 @@
                             grid-row: 2/5 ;"
                      class="h-[9rem] mb-[1rem] sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fas fa-paint-roller text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fas fa-paint-roller text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Interpreting
                             </h3>
                     </div>
@@ -390,12 +435,12 @@
                             grid-row: 3/4 ;"
                      class="h-[9rem] mb-[1rem] sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fa-solid fa-closed-captioning text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fa-solid fa-closed-captioning text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Subtitling
                             </h3>
                     </div>
-                    <p class="w-[10rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
+                    <p class="w-[10rem] text-tiny pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
                         Translating spoken dialogue From Transcripts, screenplay, commentary in films and television programs, Video games into written text on the screen.
                     </p>
                 </div>
@@ -404,12 +449,12 @@
                             grid-row: -7/-5 ;"
                      class="h-[9rem] mb-[1rem] sm:mb-[2rem]  md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem]">
-                        <i class="fas fa-paint-brush text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fas fa-paint-brush text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Transcription
                             </h3>
                     </div>
-                    <p class="w-[10rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
+                    <p class="w-[10rem] text-tiny pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
                         We provide transcription services for videos or audio-recordings of any length or any language.
                     </p>
                 </div> 
@@ -418,12 +463,12 @@
                             grid-row: -6/-5 ;"
                      class="h-[9rem] mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fas fa-ruler-combined text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fas fa-ruler-combined text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Localization 
                             </h3>
                     </div>
-                    <p class="w-[10rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
+                    <p class="w-[10rem] text-tiny pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
                         We address cultural and non-textual components as well as linguistic issues when adapting a product or service for another country or locale.
                     </p>
                 </div>
@@ -431,12 +476,12 @@
                             grid-row: 3/4 ;"
                      class="h-[9rem] mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fa-sharp fa-solid fa-landmark text-lg mr-[1rem] text-dullBrown sm:text-xl sm:mr-[2rem] md:text-xl md:mr-[2rem]"></i>
-                            <h3 class="text-base mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-lg sm:mb-[0.2rem] md:text-lg md:mb-[0.2rem]">
+                        <i class="fa-sharp fa-solid fa-landmark text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Government 
                             </h3>
                     </div>
-                    <p class="w-[10rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
+                    <p class="w-[10rem] text-tiny pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[15rem] md:w-[15rem]">
                         We work with federal, state and local government offices. With trust and outstanding level of confidentiality, we provide high quality translation & interpreting services.
                     </p>
                 </div>   
@@ -458,7 +503,7 @@
                     Our Essential 5-Step Quality Control
                 </h2>
             </div>
-            <div class="max-w-full grid grid-flow-row grid-cols-2  gap-[2rem] items-center justify-items-center md:grid-flow-col md:grid-rows-2 md:grid-cols-3 ">
+            <div class="max-w-full grid grid-flow-row grid-cols-2 pt-[2rem]  gap-[1rem] items-center justify-items-center md:grid-flow-col md:grid-rows-2 md:grid-cols-3 md:gap-[2rem]">
 
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
                     <div class="rounded-full border-[1.5px] border-dullBrown p-4">
@@ -558,6 +603,42 @@
 
     </section>
 
+    <section id="our-partners">
+        <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-white max-h-[100vh] md:px-[64px] sm:px-[50px] md:pb-[7rem]">
+            <div class="pt-[5%] md:pt-[2rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                            
+                    Our Partners
+                </h1>
+                <h2 class="text-center text-xl py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+
+                    We Feel Very Proud For Our Great Achievements
+                </h2>
+            </div>
+            <div class="flex flex-wrap justify-center space-x-4 space-y-4 ">
+                <div class="p-4 flex items-center align-middle bg-white shadow-xl rounded-md">
+                    <img src="images/mPharma.png" alt="partner" class="w-20 ">
+    
+                </div>
+                <div class="p-4 flex items-center align-middle bg-white shadow-xl rounded-md">
+                    <img src="images/technisup.png" alt="partner" class="w-20 ">
+    
+                </div>
+                <div class="p-4 flex items-center align-middle bg-white shadow-xl rounded-md">
+                    <img src="images/CARE.png" alt="partner" class="w-20 ">
+    
+                </div>
+                <div class="p-4 flex items-center align-middle bg-white shadow-xl rounded-md">
+                    <img src="images/GUARANTY Trust Bank.png" alt="partner" class="w-20 ">
+    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </section>
+
     <section id="contact-us">
 
         <div class="max-w-[100%] overflow-hidden px-[16pt] bg-white min-h-[100vh] sm:px-[50px] md:px-[64px]">
@@ -615,7 +696,7 @@
             <div class="flex w-full justify-center items-center ">
 
                 <form action="index.html" 
-                      class="pb-[2rem] flex flex-col space-y-[1rem] text-tiny font-paragraphTextFont sm:space-y-[1rem] md:pb-0 md:space-y-[1rem]">
+                      class="pb-[2rem] flex flex-col space-y-[1rem] text-tiny font-paragraphTextFont md:pb-0">
                       
                     <div class="flex flex-col justify-between space-y-[1rem] space-x-0 md:flex-row md:space-x-[1rem] md:space-y-0 "> 
                         <div>
@@ -646,11 +727,14 @@
             </div>
 
         </div>
+        <div class="absolute -bottom-60 right-72 -z-10 border-[2rem] border-lightGrey rounded-full w-[50%]">
+
+        </div>
 
     </section>
 
-    <footer class="max-w-[100%] overflow-hidden px-[16pt] sm:max-w-[100%] md:h-[17rem] sm:px-[50px] md:px-[64px]"
-            style="background-image: url(images/no-revisions-AyLaHN30zn0-unsplash.jpg);    
+    <footer class="max-w-[100%] overflow-hidden px-[16pt] sm:max-w-[100%] md:h-[20rem] sm:px-[50px] md:px-[64px]"
+            style="background-image: url(images/footer.png);    
                    background-position: center;
                    background-size: cover;
                    box-sizing: border-box;
@@ -661,7 +745,7 @@
 
                 <img src="images/Wika_Icon_logo_with_bg.png" class="mt-[16px] pb-[20px] cursor-pointer w-[40px] md:pt-[16px] md:pb-[50px]">
 
-                <p class="max-w-[70%] text-tiny text-justify pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-[15rem] md:pt-0 md:max-w-[20rem]">
+                <p class="max-w-[70%] text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-[20rem] md:pt-0 md:max-w-[20rem]">
                     Wika Translate Ltd constantly reaches out to translators and interpreters to find the very best.
                 </p>
     
@@ -680,7 +764,7 @@
 
             <div class="">
 
-                    <h3 class="text-base pb-[40px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-lg md:text-lg">
+                    <h3 class="text-small pb-[40px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
                     
                         Useful Links     
                     </h3>
@@ -695,7 +779,7 @@
                         <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Services</a></li>
     
                     </ul>
-                    <ul class="pl-[6rem] md:pl-[4rem]">
+                    <ul class="pl-[6rem] sm:pl-[100%] md:pl-[4rem]">
     
                         <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Blog</a></li>
                         <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Faq</a></li>
@@ -709,7 +793,7 @@
 
             <div class="mt-0">
 
-                <h3 class="text-base pb-[10px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-lg md:text-lg">
+                <h3 class="text-small pb-[10px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
                     Subscribe To Our Newsletter 
                 </h3>
 
@@ -717,8 +801,8 @@
                     <div class="flex flex-col ">
                         <input type="email" 
                                name="email" 
-                               placeholder="Email Address" 
-                               class="ring-1 ring-dullBrown w-full px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] mt-[1rem] outline-none focus:ring-1 border-dullBrown focus:ring-black">
+                               placeholder="Email Address"
+                               class="w-full ring-1 ring-dullBrown px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] mt-[1rem] outline-none focus:ring-1 border-dullBrown focus:ring-black">
                         <button class="text-tiny self-end text-white font-subHeaderFont font-bold pt-[0.5rem] " type="subscribe">
                         
                             Subscribe Now
@@ -726,14 +810,14 @@
                     </div>
                 </div>
 
-                <p class="max-w-[70%] text-tiny text-justify pt-[5px] pb-[10px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[15rem] md:max-w-[22rem]">
+                <p class="max-w-[70%] text-tiny pt-[5px] pb-[10px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[20rem] md:max-w-[22rem]">
                     Wika Translate Ltd offers one-stop solutions to your translation needs.
                 </p>
 
             </div>
 
         </div>
-        <div class="trademark">
+        <div class="pt-[2rem]">
 
             <img src="images/Line.png" class="max-w-[100%] pb-[0.5rem] pt-[0.5rem] opacity-50 flex content-center items-center sm:pb-[1rem] sm:pt-[1rem] md:pb-[1rem] md:pt-[1rem] ">
 
@@ -744,7 +828,7 @@
                     Terms of use | Privacy Environmental Policy
                 </h3>
 
-                <h3 class="pt-[0.5rem] text-tiny font-HeaderFont font-thin leading-[1.2rem] drop-shadow-buttonShadow sm:pt-0 md:pt-0">
+                <h3 class="py-[0.5rem] text-tiny font-HeaderFont font-thin leading-[1.2rem] drop-shadow-buttonShadow sm:py-0 md:py-0">
                     
                     Copyright &copy; 2019 Wika Translate Ltd. All rights reserved.
                 </h3>
