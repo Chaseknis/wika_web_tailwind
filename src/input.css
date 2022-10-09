@@ -25,3 +25,8 @@
         -webkit-text-fill-color: transparent;
       }
   }
+@keyframes circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
