@@ -63,6 +63,7 @@ module.exports = {
       },
       colors: {
         dullBrown: 'rgb(134, 113, 73)',
+        dullBrownLight: 'rgba(134, 113, 73,0.60)',
         foggyGrey: 'rgb(211, 204, 184)',
         barleyWhite: 'rgb(255, 243, 197)',
         White: 'rgb(255, 255, 255)',
