@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased">
+<body class="antialiased bg-foggyGrey">
 
     <header class="max-w-[100% overflow-hidden pt-[16pt] h-[100vh] md:pt-0 md:px-0"
             style="background: linear-gradient(rgba(56, 52, 41, 0.60),rgba(56, 52, 41, 0.60)), url(images/andrea-de-santis-HcKn6GmC8_k-unsplash.jpg); 
@@ -32,13 +32,28 @@
                     <img class="w-[80px] h-[80px] cursor-pointer md:w-[100px] md:h-[100px]" src="images/WIKA_LOGO_Vanilla.png" style="filter: drop-shadow(0 0.3rem 0.5rem rgba(0, 0, 0, 0.6));">
                 </div>
 
-                <div class="hidden md:flex items-end space-x-[25px] text-tiny text-white text-right font-subHeaderFont drop-shadow-heroShadow">
-                    <a href="#" class="active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-white">Home</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-white">About</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-white">Services</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-white">Translation</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-white">Contact</a>
+                <div class="hidden md:flex items-end space-x-[25px] text-tiny text-foggyGrey text-right font-subHeaderFont drop-shadow-heroShadow">
+                    <a href="#" class="active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Home</a>
+                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">About</a>
+                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Services</a>
+                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Translation</a>
+                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Contact</a>
                 </div>
+                <button class="block md:hidden py-2 px-2 mx-2 rounded focus:outline-none hover:bg-foggyGrey group">
+                    <div class="w-6 h-1 bg-dullBrown mb-1"></div>
+                    <div class="w-6 h-1 bg-dullBrown mb-1"></div>
+                    <div class="w-6 h-1 bg-dullBrown"></div>
+
+                    <div class="absolute top-0 -right-full h-screen w-8/12 bg-foggyGrey border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+                        <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Home</a>
+                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">About</a>
+                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Services</a>
+                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Translation</a>
+                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Contact</a>
+                        </div>
+                    </div>
+                </button>
             </div>
 
         </nav>
@@ -49,7 +64,7 @@
                 <div class="md:w-[100%]">
 
                     <h1 style="animation: movetext 1s 0.4s forwards;"
-                        class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-white leading-[55px] drop-shadow-2xl md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
+                        class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-foggyGrey leading-[55px] drop-shadow-2xl md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
 
                         Your Professional Language Solution
                     </h1>
@@ -59,13 +74,13 @@
                         Wika Translate
                     </h2>
                     <p style="animation: movetext 1s 0.8s forwards;"
-                       class="text-center text-tiny pb-[20px] font-paragraphTextFont text-white leading-[1.25rem] drop-shadow-heroShadow md:max-w-[48%] md:text-left md:text-tiny md:pb-[0.625rem]">
+                       class="text-center text-tiny pb-[20px] font-paragraphTextFont text-foggyGrey leading-[1.25rem] drop-shadow-heroShadow md:max-w-[48%] md:text-left md:text-tiny md:pb-[0.625rem]">
                                
                         Wika Translate is a fast-growing translation agency providing professional language solutions to businesses and individuals worldwide.
                     </p>
                     <div class="flex flex-col items-center justify-between mt-[10px] md:flex-row">
                         <div style="animation: movetext 1s 0.9s forwards;" 
-                             class="flex items-center justify-between text-white border-[1px] text-tiny font-subHeaderFont sm:border-none md:border-none">
+                             class="flex items-center justify-between text-foggyGrey border-[1px] border-foggyGrey text-tiny font-subHeaderFont sm:border-none md:border-none">
 
                              <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
                              <button class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
@@ -94,7 +109,7 @@
                 <div class="md:max-w-[100%] pt-[2rem] md:flex md:flex-row">
                     
                     
-                    <div class="md:w-[50%] grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 ">
+                    <div class="md:w-[50% grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 ">
                         <img src="images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marissa-grootes-vdaJJbls3xE-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marcos-paulo-prado-_1QHEfxpWKM-unsplash.jpg" class="w-[40rem]" alt="">
@@ -151,7 +166,7 @@
                 </h2>
             </div>
             <div>
-                <div class="grid grid-flow-col justify-center items-stretch align-middle grid-rows-5 grid-cols-2 gap-4 md:grid-flow-row md:grid-rows-2 md:grid-cols-5 md:gap-4 md:pb-[4rem]">
+                <div class="grid grid-flow-col justify-center items-start grid-rows-5 grid-cols-2 gap-4 md:grid-flow-row md:grid-rows-2 md:grid-cols-5 md:gap-4 md:pb-[4rem]">
                     <div class="max-w-full flex flex-col justify-center items-center ">
                         <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
                             <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
@@ -416,14 +431,14 @@
                 <div class="max-w-[100%] flex flex-col py-[3rem] mx-[2rem]  md:flex-row md:justify-between">
 
                     <div class="pb-[3rem] flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-white opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
+                        <h4 id="translators" class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
                                 
                             100+ 
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem] ">
-                            <h2 class="text-center text-small font-HeaderFont font-bold text-white leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 id="database" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
     
-                                Database of translators
+                                Database
                             </h2>
                             <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] drop-shadow-heroShadow">       
                                     
@@ -434,12 +449,12 @@
                     </div> 
     
                     <div class="pb-[3rem] flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-white opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
+                        <h4 class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
                                 
                             100% 
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem]">
-                            <h2 class="text-center text-small font-HeaderFont font-bold text-white leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
     
                                 Accuracy Rate
                             </h2>
@@ -452,12 +467,12 @@
                     </div> 
     
                     <div class="flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-white opacity-80  leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
+                        <h4 class="pb-[2rem] pr-[1rem] text-base font-heroTitleFont font-bold  text-foggyGrey opacity-80  leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
                                 
                             150+  
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem]">
-                            <h2 class="text-center text-small font-HeaderFont font-bold text-white leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
     
                                 Languages
                             </h2>
@@ -517,7 +532,7 @@
                             grid-row: 2/5 ;"
                      class="mb-[1rem] sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fas fa-paint-roller text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                        <i class="fa-solid fa-headset text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
                             <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Interpreting
                             </h3>
@@ -545,7 +560,7 @@
                             grid-row: -7/-5 ;"
                      class="mb-[1rem] sm:mb-[2rem]  md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem]">
-                        <i class="fas fa-paint-brush text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                        <i class="fa-solid fa-file-lines text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
                             <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Transcription
                             </h3>
@@ -559,7 +574,7 @@
                             grid-row: -6/-5 ;"
                      class="mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
-                        <i class="fas fa-ruler-combined text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
+                        <i class="fa-solid fa-earth-americas text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
                             <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Localization 
                             </h3>
@@ -571,7 +586,7 @@
                 <div style="grid-column: 11/14; 
                             grid-row: 3/4 ;"
                      class="mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
-                    <div class="flex items-center mb-[1rem] ">
+                    <div class="flex items-center mb-[1rem]">
                         <i class="fa-sharp fa-solid fa-landmark text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
                             <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Government 
@@ -599,15 +614,15 @@
                     Our Essential 5-Step Quality Control
                 </h2>
             </div>
-            <div class="max-w-full grid grid-flow-row grid-cols-2 pt-[2rem]  gap-[1rem] items-center justify-items-center md:grid-flow-col md:grid-rows-2 md:grid-cols-3 md:gap-[2rem]">
+            <div class="max-w-full grid grid-flow-row grid-cols-2 pt-[2rem] justify-items-center items-start  gap-[1rem] md:grid-flow-col md:grid-rows-2 md:grid-cols-3 md:gap-[2rem]">
 
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[1.5px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
                         </svg> 
                     </div>
-                    <div class="grid justify-items-center gap-2 ">
+                    <div class="grid justify-items-center gap-2">
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Translation
@@ -619,13 +634,13 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-3">
-                    <div class="rounded-full border-[1.5px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
                         </svg> 
                     </div>
-                    <div class="grid justify-items-center gap-2 ">
+                    <div class="grid justify-items-center gap-2">
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Proofreading
@@ -637,13 +652,13 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-5">
-                    <div class="rounded-full border-[1.5px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                         </svg> 
                     </div>
-                    <div class="grid justify-items-center gap-2 ">
+                    <div class="grid justify-items-center gap-2">
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Editing
@@ -655,13 +670,13 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-2">
-                    <div class="rounded-full border-[1.5px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
                         </svg>  
                     </div>
-                    <div class="grid justify-items-center gap-2 ">
+                    <div class="grid justify-items-center gap-2">
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Review
@@ -673,13 +688,13 @@
                     </div>
                 </div>
                 <div class="w-[200px] grid col-span-2 gap-4 text-center justify-items-center md:order-4 md:col-auto">
-                    <div class="rounded-full border-[1.5px] border-dullBrown p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
                         </svg>  
                     </div>
-                    <div class="grid justify-items-cente gap-2 ">
+                    <div class="grid justify-items-center gap-2">
                         <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Delivery
@@ -701,104 +716,96 @@
     <section id="frequently-asked-questions">
 
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey md:px-[64px] sm:px-[50px] md:pb-[7rem]">
+            <div class="pt-[5%] md:pt-[2rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                            
+                    FAQ
+                </h1>
+                <h2 class="text-center text-xl py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
 
-            <div class="md:max-w-[100%] pt-[2rem] md:flex md:flex-row">
+                    What People are curious about.
+                </h2>
+            </div>
 
-                <div class="max-w-[100%] md:max-w-[50%] md:pl-[5%]">
-                    <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
-                                
-                        FAQ
-                    </h1>
-                    <h2 class="text-center text-xl py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
-    
-                        What People are curious about.
-                    </h2>
-                </div>
-    
-                <div class="max-w-[100%] md:max-w-[50%] md:pl-[10%]">
-    
+            <div class="max-w-full flex justify-center  ">
+
+                <div class="max-w-full px-[5%] pb-[2rem] pt-[3rem] bg-barleyWhite rounded-lg shadow-large">
+
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
-                            How can I trust that your translations will be accurate? Do you have any references?
+                            How can I trust your translation Services accuracy?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            When you work with Day Translations, you’re in safe hands. We’re proud to have collaborated with many major international companies, including Siemens, the Super Bowl Committee and Auburn University, USA. But don’t just take our word for it. Check out what our many satisfied clients are saying about us.
-                            For your further peace of mind, we’re an active member of the American Translators Association (ATA) and the National Association of Judiciary Interpreters and Translators (NAJIT), as well as being rated A+ by the Better Business Bureau (BBB). Quality and accuracy are of the utmost importance to us and we always assign each project to the translation team with the most suitable expertise in your related field.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            At Wika Translate we put quality first, and we are very protective when it comes to our reputation. We assign your project to the experienced team of translators in your related field, in order for us to deliver the best services in the industry.
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What’s the difference between a certified and a notarized translation?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            A certified translation is a document translated by a professional translator and accompanied by a signed Certificate of Accuracy. A notarized translation bears a notary’s seal and is an additional service that involves adding the signature of a notary to your document. You can always contact us if you’re not sure what type of document you need. Our experienced advisors are here to help.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            Certified translation refers to translations done, signed and sealed by a professional translator. Notarized translation refers to official documents thoroughly and accurately translated from the source into the target language which are then authenticated by a public notary. We are always a call away if you happen to not be sure of what type of document you need, Contact us at anytime.
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             I have a birth certificate that I want translated and certified. Can you provide this service?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            Yes. Day Translations provides certified translations for all official documents, such as birth certificates. We’ll even certify your document free of charge.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            Yes, Wika Translate provides certified translations for all official documents, such as Degrees, Transcripts, Police clearance, birth/death certificates, Divorce certificates, celibacy and marriage certificates etc.. 
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             How can I send my documents to Wika Translate?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            Email your documents to info@wikatranslate.com and we will provide you with a FREE quote in less than 10 minutes.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            You can Email your documents to info@wikatranslate.com and we will provide you with a FREE quote in less than 10 minutes.
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             How long will it take for my documents to be translated?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            The time we take to translate your documents will depend on your project size, document complexity and required language(s). We don’t offer a “one-size-fits-all” solution or service. And, as every request is different, we invite you to contact us to discuss your individual requirements. We’ll always do our best to exceed your expectations, within any deadline.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            The time we take to translate your documents will depend on your project size, document complexity and required language(s). We welcome you to contact us to discuss your individual requirements. We’ll always do our best to exceed your expectations, within any deadline.
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What are your payment terms and methods?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            We accept credit cards, debit cards, PayPal, checks and bank transfers. Payment is requested in advance.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            You can pay using your Debit/Credit card with our POS or Mobile Money, worldRemit, checks and bank transfers. Payment is requested in advance.
                         </p>
                     </details>
-
+    
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
                         <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What currencies do you accept?
                         </summary>
     
-                        <p class="w-full px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
-                            We accept all currencies.
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                            We accept USD and Rwandan Francs, but we are flexible. Talk to us in case you want other options.
                         </p>
                     </details>
     
                 </div>
 
-
             </div>
-            
-
-
 
         </div>
-
-
 
     </section>
 
@@ -814,303 +821,27 @@
                     We Feel Very Proud For Our Great Achievements
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center items-center align-middle space-x-[9rem] space-y-4 ">
+            <div id="scale_Partners" class="flex flex-wrap justify-around items-center align-middle">
 
-                <div class="p-4 flex items-center align-middle grayscale-[100%] hover:grayscale-0">
+                <div class="p-4 cursor-pointer flex items-center align-middle grayscale-[100%] hover:grayscale-0">
                     <img src="images/mPharma.png" alt="partner" class="w-20 ">
     
                 </div>
-                <div class="p-4 flex items-center align-middle grayscale-[100%] hover:grayscale-0">
+                <div class="p-4 cursor-pointer flex items-center align-middle grayscale-[100%] hover:grayscale-0">
                     <img src="images/technisup.png" alt="partner" class="w-20 ">
     
                 </div>
-                <div class="p-4 flex items-center align-middle grayscale-[100%] hover:grayscale-0">
+                <div class="p-4 cursor-pointer flex items-center align-middle grayscale-[100%] hover:grayscale-0">
                     <img src="images/CARE.png" alt="partner" class="w-20 ">
     
                 </div>
-                <div class="p-4 flex items-center align-middle grayscale-[100%] hover:grayscale-0">
+                <div class="p-4 cursor-pointer flex items-center align-middle grayscale-[100%] hover:grayscale-0">
                     <img src="images/GUARANTY Trust Bank.png" alt="partner" class="w-20 ">
     
                 </div>
                 
             </div>
-            <!--/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
-
-.inherited-styles-for-exported-element {
-  color: #333;
-  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-size: 100%;
-}
-
-img {
-  backface-visibility: hidden;
-  filter: saturate(0);
-  height: auto;
-  opacity: .6;
-  transition: all 200ms;
-  width: 100%;
-}
-
-
-/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
-
-.inherited-styles-for-exported-element {
-  color: #333;
-  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-size: 100%;
-}
-
-h5 {
-  font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-weight: 400;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  height: 1em;
-  overflow: visible;
-  vertical-align: -.125em;
-}
-
-.feature-card {
-  -webkit-box-direction: normal;
-  -webkit-box-flex: 1;
-  -webkit-box-orient: vertical;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  display: block;
-  flex: 1;
-  flex-direction: column;
-  margin: .25rem 0;
-  padding: 40px 28px;
-}
-
-.feature-title {
-  font-size: 1.3em;
-  margin-bottom: 0;
-}
-
-.feature-desc {
-  color: #53627c;
-}
-
-.feature-icon {
-  font-size: 2em;
-}
-
-@media screen and (min-width: 768px) {
-  .feature-card {
-    margin: .25rem .5em;
-  }
-}
-
-.svg-inline--fa.fa-w-16 {
-  width: 1em;
-}
-
-svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
-
-.inherited-styles-for-exported-element {
-  color: #333;
-  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-size: 100%;
-}
-
-h3 {
-  font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-weight: 400;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  overflow: visible;
-  vertical-align: -.125em;
-}
-
-.button {
-  border: 1px solid #eee;
-  border-radius: 50px;
-  box-shadow: rgba(0, 12, 32, .04) 0 0 1px 0, rgba(10, 31, 68, .1) 0 3px 4px 0;
-  height: 50px;
-  line-height: 50px;
-  margin-top: .7em;
-  padding: 0 25px;
-  text-decoration: none;
-  will-change: transform;
-}
-
-.demo-btn {
-  cursor: pointer;
-  display: none;
-  transition: all 200ms;
-}
-
-.demo-cta {
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #f3f3f3;
-  border-radius: 12px;
-  margin-bottom: 8em;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
-  box-sizing: border-box;
-  transition: all 350ms;
-}
-
-.card-example {
-  display: inline-block;
-  margin: 0;
-  max-width: 300px;
-  padding: 8px;
-  text-align: left;
-}
-
-.card-body {
-  font-size: .9em;
-  padding: 0 .8em;
-}
-
-.card-title {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: .8em;
-}
-
-.card-desc {
-  color: #999;
-  margin-top: 0;
-}
-
-.card-image {
-  border-radius: 7px;
-  max-height: 200px;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 1024px) {
-  .demo-btn {
-    display: inline-block;
-  }
-
-  .card {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-.button svg {
-  margin-right: .5em;
-}
-
-.demo-cta h3 {
-  font-size: 2em;
-  margin-top: 0;
-}
-
-.card-image img {
-  height: auto;
-  overflow: hidden;
-  transition: all 200ms;
-  width: 100%;
-}
-
-body>section:not(.buy-cta) {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 10%;
-  width: 100%;
-}
-
-section.demo-cta {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  body>section:not(.buy-cta) {
-    max-width: 1050px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  body>section:not(.buy-cta) {
-    box-sizing: initial;
-    width: auto;
-  }
-}
-
-.demo-btn:hover {
-  background-color: #afe6c3;
-  transform: scale(1.05);
-}
-
-.demo-cta:not(.codepen) {
-  display: none;
-}
-
-.demo-cta .components, .demo-cta .text {
-  -webkit-box-flex: 1;
-  flex: 1;
-}
-
-.demo-cta .components {
-  align-self: center;
-  text-align: center;
-}
-
-.card-example:hover {
-  box-shadow: rgba(0, 12, 32, .04) 0 0 1px 0, rgba(0, 12, 32, .04) 0 10px 16px 0;
-}
-
-.card-desc .fa-arrow-right {
-  float: right;
-}
-
-.demo-btn.second {
-  background-color: #292b36;
-  color: #fff;
-  margin-left: 0;
-}
-
-.demo-cta:not(.codepen) {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-cssscan-pro-pattern-index='47' data-cssscan-pro-pattern-opacity='2' data-cssscan-pro-pattern-size='6px' data-cssscan-pro-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-cssscan-pro-pattern-front-color='%23000000' xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(0.3)'%3E%3Cpath data-color='outline' fill='none' stroke='%23000000' stroke-width='5' stroke-opacity='0.02' d='M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 1024px) {
-  .demo-cta:not(.codepen) {
-    display: flex;
-  }
-}
-
-.svg-inline--fa.fa-w-14 {
-  width: .875em;
-}
-
-.svg-inline--fa.fa-w-18 {
-  width: 1.125em;
-}
-
-svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-
-.demo-cta:not(.codepen) {
-  padding: 72px !important;
-}
--->
-            
+                        
         </div>
 
     </section>
@@ -1180,27 +911,35 @@ svg:not(:root).svg-inline--fa {
 
             </div>
 
-            <div class="flex w-full justify-center items-center ">
+            <div class="flex w-full justify-center items-center">
 
-                <form action="index.html" 
-                      class="pb-[2rem] flex flex-col space-y-[1rem] text-tiny font-paragraphTextFont md:pb-0">
+                <form action="https://formsubmit.co/1be56a6e2450faa56bb507e8b119c8c9" method="POST" class="pb-[2rem] flex flex-col space-y-[1rem] text-tiny font-paragraphTextFont md:pb-0">
+
+
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5555/success.html">
+
+                    
                       
                     <div class="flex flex-col justify-between space-y-[1rem] space-x-0 md:flex-row md:space-x-[1rem] md:space-y-0 "> 
                         <div>
-                            <input type="text" name="name" placeholder="Full Name" class="w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
+                            <input type="name" id="name" name="name" placeholder="Full Name" required class="w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
                         </div>
 
                         <div>
-                            <input type="Phone number" name="phone" placeholder="Phone Number" class="w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
+                            <input type="Phone number" id="phone" name="phone" placeholder="Phone Number" class="w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
                         </div>
 
                         <div>
-                            <input type="email" name="email" placeholder="Email Address" class=" w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required class=" w-full bg-foggyGrey ring-1 ring-dullBrown px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown ">
                         </div>
                     </div>
 
                     <div>
-                        <textarea name="message" placeholder="Message" rows="16" cols="220" class="w-full bg-foggyGrey ring-1 ring-dullBrown resize-none px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown "></textarea>
+                        <textarea name="message" id="message" placeholder="Message" rows="16" cols="220" required class="w-full bg-foggyGrey ring-1 ring-dullBrown resize-none px-[1rem] py-[0.5rem] mt-[1rem] outline-none focus:ring-1 focus:ring-dullBrown "></textarea>
                     </div>
                     
                     <div style="animation: movetext 1s 0.9s forwards;" 
@@ -1220,20 +959,15 @@ svg:not(:root).svg-inline--fa {
 
     </section>
 
-    <footer class="max-w-[100%] overflow-hidden px-[16pt] sm:max-w-[100%] md:h-[20rem] sm:px-[50px] md:px-[64px]"
-            style="background-image: url(images/footer.png);    
-                   background-position: center;
-                   background-size: cover;
-                   box-sizing: border-box;
-                   position: relative;">
+    <footer class="max-w-[100%] overflow-hidden px-[16pt] bg-dullBrown sm:max-w-[100%] md:h-[39vh] sm:px-[50px] md:px-[64px]">
 
-        <div class="flex justify-between items-start flex-col sm:flex-col md:flex-row">
-            <div class="flex-row align-middle">
+        <div class="max-w-full flex justify-between items-start flex-col sm:flex-col md:flex-row">
+            <div class="max-w-full flex-row align-middle">
 
                 <img src="images/Wika_Icon_logo_with_bg.png" class="mt-[16px] pb-[20px] cursor-pointer w-[40px] md:pt-[16px] md:pb-[50px]">
 
-                <p class="max-w-[70%] text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-[20rem] md:pt-0 md:max-w-[20rem]">
-                    Wika Translate Ltd constantly reaches out to translators and interpreters to find the very best.
+                <p class="max-w-full text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-full md:pt-0 md:max-w-[20rem]">
+                    Wika Translate Ltd offers one-stop solutions to your translation needs.
                 </p>
     
                 <div class="md:justify-start md:items-start md:pt-0">
@@ -1251,7 +985,7 @@ svg:not(:root).svg-inline--fa {
 
             <div class="">
 
-                    <h3 class="text-small pb-[40px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
+                    <h3 class="text-small pb-[40px] pt-[30px] font-HeaderFont font-normal leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
                     
                         Useful Links     
                     </h3>
@@ -1280,25 +1014,41 @@ svg:not(:root).svg-inline--fa {
 
             <div class="mt-0">
 
-                <h3 class="text-small pb-[10px] pt-[30px] font-HeaderFont font-bold leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
+                <h3 class="text-small pb-[50px] mb-[1rem] pt-[30px] font-HeaderFont font-normal leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
                     Subscribe To Our Newsletter 
                 </h3>
 
-                <div class="my-[1rem] mx-0 relative ">
-                    <div class="flex flex-col ">
+                <div class="my-[1rem] mx-0 items-center ">
+                    <form name="submit-to-google-sheet" class="flex flex-row justify-items-center justify-between items-center">
                         <input type="email" 
-                               name="email" 
+                               name="email"
+                               required 
                                placeholder="Email Address"
-                               class="w-full ring-1 ring-dullBrown px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] mt-[1rem] outline-none focus:ring-1 border-dullBrown focus:ring-black">
-                        <button class="text-tiny self-end text-white font-subHeaderFont font-bold pt-[0.5rem] " type="subscribe">
-                        
-                            Subscribe Now
+                               class="w-full ring-1 ring-lightBlack px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] outline-none focus:ring-1 border-black focus:ring-lightBirch">
+                        <button class="w-[2rem] h-[1.65rem] flex self-end items-center text-tiny bg-black outline-none cursor-pointer border-none font-subHeaderFont font-bold" type="subscribe">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="icon icon-tabler icon-tabler-send h-[2rem] px-[0.5rem] py-[0.2rem] hover:stroke-foggyGrey " 
+                                width="100" 
+                                height="100" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="1.5" 
+                                stroke="#867149" 
+                                fill="none" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                                <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                            </svg>
+
                         </button>
-                    </div>
+                    </form>
+                    <span id="msg" class=" text-foggyGrey text-[0.5rem] block pt-[10px] "></span>
                 </div>
 
-                <p class="max-w-[70%] text-tiny pt-[5px] pb-[10px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[20rem] md:max-w-[22rem]">
-                    Wika Translate Ltd offers one-stop solutions to your translation needs.
+                <p class="max-w-full text-tiny pt-[5px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-[22rem]">
+                    Wika Translate Ltd constantly reaches out to translators and interpreters to find the very best.
                 </p>
 
             </div>
@@ -1308,7 +1058,7 @@ svg:not(:root).svg-inline--fa {
 
             <img src="images/Line.png" class="max-w-[100%] pb-[0.5rem] pt-[0.5rem] opacity-50 flex content-center items-center sm:pb-[1rem] sm:pt-[1rem] md:pb-[1rem] md:pt-[1rem] ">
 
-            <div class="flex flex-col justify-between items-center sm:flex-col md:flex-row"> 
+            <div class="flex flex-col justify-between items-center sm:pb-[1rem] sm:flex-col md:pb-0 md:flex-row"> 
 
                 <h3 class="text-tiny font-HeaderFont font-thin leading-[1.2rem] drop-shadow-buttonShadow">
                     
@@ -1325,9 +1075,29 @@ svg:not(:root).svg-inline--fa {
         </div>
 
     </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDSoFQBX7Bu0s9ySH4-SPsgGcH4WgHQkDf_cRFwtKy228kB0u/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank you for subscribing to our newsletter!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 2000)
+                form.reset()
 
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>

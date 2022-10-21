@@ -27,6 +27,13 @@ module.exports = {
       lg:'976px',
       xl:'1440px'
     },
+    variants: {
+      extend: {
+        display: ['group-focus'],
+        opacity: ['group-focus'],
+        inset: ['group-focus']
+      },
+    },
     extend: {
       gridTemplateColumns: {
         'custom-16': 'repeat(16, 1fr)',
@@ -53,13 +60,13 @@ module.exports = {
         'medium': '0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075)',
         'large':'rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px',
         'test': '1px 2px 2px hsl(220deg 60% 50% / 0.2), 2px 4px 4px hsl(220deg 60% 50% / 0.2), 4px 8px 8px hsl(220deg 60% 50% / 0.2), 8px 16px 16px hsl(220deg 60% 50% / 0.2), 16px 32px 32px hsl(220deg 60% 50% / 0.2)',
-        'testmiddle': 'rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px',
         'xl': ' rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px',
         '1xl': 'rgba(0, 0, 0, 0.2) 0px 18px 50px -10px',
         '2xl': 'rgba(17, 12, 46, 0.15) 0px 48px 100px 0px',
         '3xl': 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
         '4xl': 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
         '6xl': 'box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;',
+        'bloated': 'box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;',
       },
       colors: {
         dullBrown: 'rgb(134, 113, 73)',
