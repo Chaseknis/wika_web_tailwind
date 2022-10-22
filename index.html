@@ -18,7 +18,7 @@
 </head>
 <body class="antialiased bg-foggyGrey">
 
-    <header class="max-w-[100% overflow-hidden pt-[16pt] h-[100vh] md:pt-0 md:px-0"
+    <header id="home" class="max-w-[100% overflow-hidden pt-[12pt] md:pt-0 md:px-0"
             style="background: linear-gradient(rgba(56, 52, 41, 0.60),rgba(56, 52, 41, 0.60)), url(images/andrea-de-santis-HcKn6GmC8_k-unsplash.jpg); 
                    background-position: center; 
                    background-size: cover; 
@@ -29,15 +29,17 @@
 
             <div class="flex items-center justify-between">
                 <div>
-                    <img class="w-[80px] h-[80px] cursor-pointer md:w-[100px] md:h-[100px]" src="images/WIKA_LOGO_Vanilla.png" style="filter: drop-shadow(0 0.3rem 0.5rem rgba(0, 0, 0, 0.6));">
+                    <a href="#home"><img class="w-[80px] h-[80px] cursor-pointer md:w-[100px] md:h-[100px]" src="images/WIKA_LOGO_Vanilla.png" style="filter: drop-shadow(0 0.3rem 0.5rem rgba(0, 0, 0, 0.6));"></a>
                 </div>
 
                 <div class="hidden md:flex items-end space-x-[25px] text-tiny text-foggyGrey text-right font-subHeaderFont drop-shadow-heroShadow">
-                    <a href="#" class="active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Home</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">About</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Services</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Translation</a>
-                    <a href="#" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Contact</a>
+                    <a href="#home" class="active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Home</a>
+                    <a href="#about-us" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">About</a>
+                    <a href="#industries" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Industries</a>
+                    <a href="#services" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Services</a>
+                    <a href="#translation" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Translation</a>
+                    <a href="#frequently-asked-questions" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">FAQ</a>
+                    <a href="#contact-us" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Contact</a>
                 </div>
                 <button class="block md:hidden py-2 px-2 mx-2 rounded focus:outline-none hover:bg-foggyGrey group">
                     <div class="w-6 h-1 bg-dullBrown mb-1"></div>
@@ -46,11 +48,13 @@
 
                     <div class="absolute top-0 -right-full h-screen w-8/12 bg-foggyGrey border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
                         <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Home</a>
-                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">About</a>
-                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Services</a>
-                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Translation</a>
-                            <a href="#" class="hover:bg-dullBrown py-4 px-6 w-full">Contact</a>
+                            <a href="#home" class="hover:bg-dullBrown py-4 px-6 w-full">Home</a>
+                            <a href="#about-us" class="hover:bg-dullBrown py-4 px-6 w-full">About</a>
+                            <a href="#industries" class="hover:bg-dullBrown py-4 px-6 w-full">Industries</a>
+                            <a href="#services" class="hover:bg-dullBrown py-4 px-6 w-full">Services</a>
+                            <a href="#translation" class="hover:bg-dullBrown py-4 px-6 w-full">Translation</a>
+                            <a href="#frequently-asked-questions" class="hover:bg-dullBrown py-4 px-6 w-full">FAQ</a>
+                            <a href="#contact-us" class="hover:bg-dullBrown py-4 px-6 w-full">Contact</a>
                         </div>
                     </div>
                 </button>
@@ -59,9 +63,45 @@
         </nav>
 
         <section id="hero">
-            <div class="max-w-[100%] px-[16pt] h-[100%] flex flex-col items-center pt-[30%] sm:px-[50px] md:items-start md:px-[64px] md:pt-[25%]">
+            <div class="max-w-[100%] px-[16pt] h-[100%] flex flex-col items-center pt-[50%] sm:px-[50px] md:items-start md:px-[64px] md:pt-[25%]">
 
-                <div class="md:w-[100%]">
+                <!-- <div class=" flex flex-wrap md:flex-nowrap">
+
+                <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+                    <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+                        <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Home</span>
+                        </a>
+                        <a href="#about-us" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">About</span>
+                        </a>
+                        <a href="#industries" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Industries</span>
+                        </a>
+                        <a href="#services" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Services</span>
+                        </a>
+                        <a href="#translation" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Translation</span>
+                        </a>
+                        <a href="#frequently-asked-questions" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">FAQ</span> 
+                        </a>
+                        <a href="#our-partners" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Our Partners</span> 
+                        </a>
+                        <a href="#contact-us" class="nav-dot block w-7 h-7 rounded-full border-[1px] border-nav bg-body">
+                            <span class="bg-foggyGrey px-2 py-1 rounded-md ml-10 font-subHeaderFont opacity-0">Contact</span> 
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+
+                    </div>
+                </nav>
+
+                </div> -->
+
+                <div class="md:w-full">
 
                     <h1 style="animation: movetext 1s 0.4s forwards;"
                         class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-foggyGrey leading-[55px] drop-shadow-2xl md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
@@ -78,14 +118,16 @@
                                
                         Wika Translate is a fast-growing translation agency providing professional language solutions to businesses and individuals worldwide.
                     </p>
-                    <div class="flex flex-col items-center justify-between mt-[10px] md:flex-row">
-                        <div style="animation: movetext 1s 0.9s forwards;" 
+                    <div class="flex flex-col justify-between items-center mt-[10px] pb-[1.5rem] md:flex-row md:pb-[2rem]">
+                        <a href="#about-us">
+                            <div style="animation: movetext 1s 0.9s forwards;" 
                              class="flex items-center justify-between text-foggyGrey border-[1px] border-foggyGrey text-tiny font-subHeaderFont sm:border-none md:border-none">
 
                              <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
-                             <button class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
+                             <button href="#about-us" class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
                         </div>
-                        <div class=" md:items-end ">
+                        </a>
+                        <div class=" md:items-end">
                             <ul class="flex flex-row space-x-[40px] pt-[60px] md:pt-0">   
                                  <li><a href="https://www.linkedin.com/company/81655771" target="_blank"><img src="images/Linkedin.png" style="animation: movetext 1s 0.9s forwards; width: 20px;"></a></li>
                                  <li><a href="https://www.instagram.com/wikatranslate" target="_blank"><img src="images/Instagram.png" style="animation: movetext 1s 0.8s forwards; width: 20px;"></a></li>
@@ -138,13 +180,15 @@
      
                             Wika Translate is East Africa’s professional translation provider. we have committed ourselves to pushing the boundaries of language service through the development of smarter and more efficient solutions based on cutting-edge technology and talented people.
                         </p>
-                        <div class=" flex justify-center md:justify-end">
-                            <div class="flex items-center text-black border-[1px] border-black text-tiny font-subHeaderFont sm:border-none md:border-none">
-    
-                                <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
-                                <button class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
+                        <a href="#about-us">
+                            <div class=" flex justify-center md:justify-end">
+                                <div class="flex items-center text-black border-[1px] border-black text-tiny font-subHeaderFont sm:border-none md:border-none">
+        
+                                    <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
+                                    <button class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
+                                </div>
                             </div>
-                        </div>
+                        </a> 
                     </div>
     
                 </div>
@@ -963,8 +1007,7 @@
 
         <div class="max-w-full flex justify-between items-start flex-col sm:flex-col md:flex-row">
             <div class="max-w-full flex-row align-middle">
-
-                <img src="images/Wika_Icon_logo_with_bg.png" class="mt-[16px] pb-[20px] cursor-pointer w-[40px] md:pt-[16px] md:pb-[50px]">
+                <a href="#home"><img src="images/Wika_Icon_logo_with_bg.png" class="mt-[16px] pb-[20px] cursor-pointer w-[40px] md:pt-[16px] md:pb-[50px]"></a>
 
                 <p class="max-w-full text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-full md:pt-0 md:max-w-[20rem]">
                     Wika Translate Ltd offers one-stop solutions to your translation needs.
@@ -994,17 +1037,17 @@
                 
                     <ul>
     
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Home</a></li>
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Contact Us</a></li>
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">About Us</a></li>
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Services</a></li>
+                        <li><a href="#home" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Home</a></li>
+                        <li><a href="#contact-us" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Contact Us</a></li>
+                        <li><a href="#about-us" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">About Us</a></li>
+                        <li><a href="#services" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Services</a></li>
     
                     </ul>
                     <ul class="pl-[6rem] sm:pl-[100%] md:pl-[4rem]">
     
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Blog</a></li>
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Faq</a></li>
-                        <li><a style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Terms & Conditions</a></li>
+                        <li><a href="#blog" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Blog</a></li>
+                        <li><a href="#frequently-asked-questions" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Faq</a></li>
+                        <li><a href="#termsandconditions" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Terms & Conditions</a></li>
     
                     </ul>
     
