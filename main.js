@@ -5,7 +5,7 @@ let count = 1;
 setInterval(() => {
     if (count < 1000) {
         count++;
-        counter.innerText = count;
+        counter.innerText = count + "+";
     }
 }, 1)
 
@@ -13,32 +13,52 @@ setTimeout (() => {
     database.innerText = "Database of translators";
 }, 4515)
 
-/* function updateList() {
-    const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
-        return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top)
-    });
 
-    document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
-    document.querySelectorAll(".nav-dot") [[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("selected-circle");
-}
+var counters =document.querySelector("#accuracy");
+var databases =document.querySelector("#rate");
 
-updateList();
-window.addEventListener('scroll', () => {
-    updateList();
-}) */
+let counts = 1;
+setInterval(() => {
+    if (counts < 100) {
+        counts++;
+        counters.innerText = counts + "%";
+    }
+}, 1)
+
+setTimeout (() => {
+    databases.innerText = "Accuracy Rate";
+}, 451.5)
 
 
-/*function sendEmail() {
-    Email.send({
-        SecureToken : "b774f7d8-85a5-45d5-9680-f34070b4a90e",
-        To : 'info@wikatranslate.com',
-        From : document.getElementById("email").value,
-        Subject : "New Contact form inquiry",
-        Body : "Name: " + document.getElementById("name").value 
-        + "<br> Phone Number: " + document.getElementById("phone").value 
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Message: " + document.getElementById("message").value
-    }).then(
-      message => alert("Your message has been sent successfully, we will get back to you in less than 10mins")
-    );
-}*/
+var counterz =document.querySelector("#languages");
+var databasez =document.querySelector("#lnggs");
+
+let countz = 1;
+setInterval(() => {
+    if (countz < 125) {
+        countz++;
+        counterz.innerText = countz + "%";
+    }
+}, 1)
+
+setTimeout (() => {
+    databasez.innerText = "Languages Worldwide";
+}, 551.5)
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDSoFQBX7Bu0s9ySH4-SPsgGcH4WgHQkDf_cRFwtKy228kB0u/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank you for subscribing to our newsletter!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 2000)
+                form.reset()
+
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
