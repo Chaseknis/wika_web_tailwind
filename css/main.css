@@ -852,10 +852,6 @@ video {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .content-center {
   align-content: center;
 }
@@ -882,10 +878,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .justify-items-center {
@@ -1148,8 +1140,8 @@ video {
   padding-right: 0.5rem;
 }
 
-.pt-\[12pt\] {
-  padding-top: 12pt;
+.pt-\[10pt\] {
+  padding-top: 10pt;
 }
 
 .pt-10 {
@@ -1614,30 +1606,23 @@ html, body {
   }
 }
 
-#scale_Partners {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(100px * 14);
+/*#scale_Partners {
+    animation: scroll 40s linear infinite;
+    width: calc(100px * 10);
 }
-
 details > summary {
-  list-style: none;
+    list-style: none;
 }
-
 details summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
-
 details > summary::after {
-  content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(134, 113, 73)'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
+    content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(134, 113, 73)'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
 }
-
 details[open] > summary::after {
-  content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(134, 113, 73)'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
+    content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(134, 113, 73)'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
+    @apply transform rotate-180;
+}*/
 
 /*figure {
     transition: right 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), filter 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), box-shadow 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), background 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -2095,6 +2080,10 @@ figure {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -2117,6 +2106,10 @@ figure {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:gap-4 {
