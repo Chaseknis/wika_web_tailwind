@@ -41,27 +41,29 @@ setInterval(() => {
     }
 }, 1)
 
-setTimeout (() => {
+setTimeout(() => {
     databasez.innerText = "Languages Worldwide";
-}, 551.5)
+}, 551.5);
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDSoFQBX7Bu0s9ySH4-SPsgGcH4WgHQkDf_cRFwtKy228kB0u/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById('msg')
       
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Thank you for subscribing to our newsletter!"
-                setTimeout(function() {
-                    msg.innerHTML = ""
-                }, 2000)
-                form.reset()
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Thank you for subscribing to our newsletter!"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            }, 2000)
+            form.reset()
 
-            })
-            .catch(error => console.error('Error!', error.message))
         })
+        .catch(error => console.error('Error!', error.message))
+});
+
+
 
 let rootEvent = document.getElementById("rootElement");
 

@@ -811,6 +811,11 @@ video {
   flex: none;
 }
 
+.animate-none {
+  -webkit-animation: none;
+          animation: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1135,16 +1140,16 @@ video {
   padding-right: 0.5rem;
 }
 
-.pt-\[10pt\] {
-  padding-top: 10pt;
+.pt-\[6pt\] {
+  padding-top: 6pt;
 }
 
 .pt-10 {
   padding-top: 2.5rem;
 }
 
-.pt-\[55\%\] {
-  padding-top: 55%;
+.pt-\[58\%\] {
+  padding-top: 58%;
 }
 
 .pb-\[20px\] {
