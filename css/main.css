@@ -603,6 +603,10 @@ video {
   right: 18rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .-z-10 {
   z-index: -10;
 }
