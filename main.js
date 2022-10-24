@@ -62,3 +62,26 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDS
             })
             .catch(error => console.error('Error!', error.message))
         })
+
+let rootEvent = document.getElementById("rootElement");
+
+let burgerNav = document.getElementById("burger-time");
+
+burgerNav.addEventListener("click", function(e) {
+    document.querySelector('#nav').classList.add('open');
+    burgerNav.style.visibility ='hidden';
+    e.preventDefault();
+    e.stopPropagation();
+
+
+});
+
+closeNav = function(){
+    if (burgerNav.style.visibility === "hidden"){
+       document.querySelector('#nav').classList.remove('open');
+       burgerNav.style.visibility ='visible';
+    }
+};
+
+rootEvent.addEventListener("click", closeNav);
+rootEvent.addEventListener("touchend", closeNav);        
