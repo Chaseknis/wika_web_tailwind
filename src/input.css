@@ -72,7 +72,7 @@ html, body {
         transform: translateX(calc(-250px * 7)); 
     }
 }
-/*#scale_Partners {
+#scale_Partners {
     animation: scroll 40s linear infinite;
     width: calc(100px * 10);
 }
@@ -88,7 +88,7 @@ details > summary::after {
 details[open] > summary::after {
     content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(134, 113, 73)'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
     @apply transform rotate-180;
-}*/
+}
 /*figure {
     transition: right 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), filter 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), box-shadow 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000), background 450ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
