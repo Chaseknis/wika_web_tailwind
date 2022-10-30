@@ -3,7 +3,7 @@ var database =document.querySelector("#database");
 
 let count = 1;
 setInterval(() => {
-    if (count < 1000) {
+    if (count < 900) {
         count++;
         counter.innerText = count + "+";
     }
