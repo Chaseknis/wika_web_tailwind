@@ -831,20 +831,12 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-5 {
@@ -1967,8 +1959,8 @@ figure {
     height: 6rem;
   }
 
-  .md\:h-\[70vh\] {
-    height: 70vh;
+  .md\:h-\[60vh\] {
+    height: 60vh;
   }
 
   .md\:h-\[100\%\] {
@@ -1977,10 +1969,6 @@ figure {
 
   .md\:h-\[39vh\] {
     height: 39vh;
-  }
-
-  .md\:h-\[60vh\] {
-    height: 60vh;
   }
 
   .md\:w-\[100px\] {
