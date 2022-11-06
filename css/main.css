@@ -1979,6 +1979,10 @@ figure {
     width: 100%;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:w-\[9rem\] {
     width: 9rem;
   }

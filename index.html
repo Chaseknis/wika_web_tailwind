@@ -13,6 +13,7 @@
     <meta data-h-head="ssr" data-hid="og:description" name="og:description" content="Translation Agency">
     <meta data-h-head="ssr" data-hid="og:image" property="og:description" content="/og-favicon.png">
     <title>Wika Translate - Translation Agency</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Start of Async Drift Code -->
     <script>
         "use strict";
@@ -114,11 +115,16 @@
 
                 <div class="md:w-full">
 
-                    <h1 style="animation: movetext 1s 0.4s forwards;"
+                    <div data-aos="fade-down-right">
+
+                        <h1 style="animation: movetext 1s 0.4s forwards;"
                         class="max-w-[100%] text-center text-2xl font-heroTitleFont font-bold text-foggyGrey leading-[55px] drop-shadow-2xl md:max-w-[60%] md:text-left md:text-6xl md:leading-[80px] xl:max-w-[60%]">
 
-                        Your Professional Language Solution
-                    </h1>
+                            Your Professional Language Solution
+                        </h1>
+
+                    </div>
+
                     <h2 style="animation: movetext 1s 0.6s forwards;"
                         class="max-w-[100%] text-center text-xl py-[20px] font-HeaderFont font-bold text-dullBrown drop-shadow-heroShadow md:text-left md:text-2xl md:py-[10px]">
 
@@ -162,7 +168,7 @@
                 <div class="md:max-w-[100%] pt-[2rem] md:flex md:flex-row">
                     
                     
-                    <div class="md:w-[50% grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 ">
+                    <div data-aos="zoom-out-right" class="md:w-[50%] grid grid-flow-row grid-cols-4 grid-rows-2 gap-1 hover:before:animate-bounce after:animate-spin duration-75 ">
                         <img src="images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marissa-grootes-vdaJJbls3xE-unsplash.jpg" class="w-[40rem]" alt="">
                         <img src="images/marcos-paulo-prado-_1QHEfxpWKM-unsplash.jpg" class="w-[40rem]" alt="">
@@ -175,22 +181,27 @@
                     <div class="max-w-[100%] md:max-w-[50%] md:pl-[5%]">
 
                         <div>
-                            <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+
+                            <div data-aos="zoom-in-right">
+                                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
                                     
-                                About Us 
-                            </h1>
+                                    About Us 
+                                </h1>
+                            </div>
+                            <div data-aos="zoom-out-up">
+                                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem]  drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[3rem]">
                 
-                            <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem]  drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[3rem]">
-                
-                                Home To Language Experts
-                            </h2>
-        
+                                    Home To Language Experts
+                                </h2>
+                            </div>
+
                         </div>
-                            
-                        <p class="text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1.25rem] drop-shadow-pageTextShadow md:text-tiny md:text-left md:pb-[0.625rem]">
+                        <div data-aos="zoom-in-left">
+                            <p class="text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1.25rem] drop-shadow-pageTextShadow md:text-tiny md:text-left md:pb-[0.625rem]">
      
-                            Wika Translate is East Africa’s professional translation provider. we have committed ourselves to pushing the boundaries of language service through the development of smarter and more efficient solutions based on cutting-edge technology and talented people.
-                        </p>
+                                Wika Translate is East Africa’s professional translation provider. we have committed ourselves to pushing the boundaries of language service through the development of smarter and more efficient solutions based on cutting-edge technology and talented people.
+                            </p>
+                        </div>
                         <a href="#about-us">
                             <div class=" flex justify-center md:justify-end">
                                 <div class="flex items-center text-black border-[1px] border-black text-tiny font-subHeaderFont sm:border-none md:border-none">
@@ -1129,6 +1140,10 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
