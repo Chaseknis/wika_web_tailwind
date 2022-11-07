@@ -2,9 +2,149 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    -webkit-font-smoothing: antialiased;
+  }
 html, body {
     scroll-behavior: smooth;
+    color: rgb(31, 31, 31);
 }
+  #custom-navbar #navbar-nav > a:hover,
+  #custom-navbar #navbar-nav > a:focus {
+    background-color: transparent;
+  }
+  #career figure {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+  }
+  #career figure span {
+    float: left;
+    margin-left: -15px;
+    padding: 15px 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  #career figure span i {
+    background: #29ca8e;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .entry-form {
+    background: #252020;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6em;
+    width: 450px;
+    height: 450px;
+  }
+
+  .entry-form h2 {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .entry-form .form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    box-shadow: none;
+    height: 45px;
+    margin: 10px 0;
+  }
+
+  .entry-form .submit-btn {
+    background: #ffffff;
+    border-radius: 50px;
+    border: 0;
+    color: #252020;
+    width: 50%;
+    height: 50px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+  }
+
+  .entry-form .submit-btn:hover {
+    background: #3f51b5;
+    color: #ffffff;
+  }
+  a,
+  input, button,
+  .form-control {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .section-btn {
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 15px 30px;
+    transition: 0.5s;
+  }
+
+  .section-btn:hover {
+    background: #ffffff;
+    border-color: transparent;
+  }
+
+
+
+/*.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 rgb(211, 204, 184);
+  }
+
+  .spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid rgb(134, 113, 73);
+    border-top-color: rgb(211, 204, 184);
+    animation: spinner .9s linear infinite;
+  }
+
+  @-webkit-@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }*/
+
+
 /* .left-50 {
     left: 50%; 
 }
@@ -52,10 +192,6 @@ html, body {
     }
     #banner h1 {
         -webkit-text-stroke: 1px rgb(255, 255, 255);
-        -webkit-text-fill-color: transparent;
-      }
-    h1 {
-        -webkit-text-stroke: 1px #867149;
         -webkit-text-fill-color: transparent;
       }
   }

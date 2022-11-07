@@ -66,52 +66,61 @@
 </head>
 <body class="antialiased bg-foggyGrey">
 
-    <header id="home" class="max-w-[100% overflow-hidden pt-[6pt] md:pt-0 md:px-0"
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+             
+        </div>
+    </section>
+
+    <header id="home" class="max-w-[100%] relative overflow-hidden md:pt-0 md:px-0"
             style="background: linear-gradient(rgba(56, 52, 41, 0.60),rgba(56, 52, 41, 0.60)), url(images/andrea-de-santis-HcKn6GmC8_k-unsplash.jpg); 
                    background-position: center; 
                    background-size: cover; 
                    box-sizing: border-box; 
                    position: relative;">
 
-        <nav class="max-w-[100%] px-[16pt] container justify-end sm:px-[50px] md:px-[64px]">
-
+        <nav id="custom-navbar" class="max-w-[100%] sticky top-0 px-[16pt] container bg-darkJungleGreen border-t-[5px] border-solid border-dullBrown border-b-0 shadow-md pt-0 pb-0 mb-0 justify-end sm:px-[50px] md:px-[64px]">
+  
             <div class="flex items-center justify-between">
                 <div>
-                    <a href="#home"><img class="w-[80px] h-[80px] cursor-pointer md:w-[100px] md:h-[100px]" src="images/WIKA_LOGO_Vanilla.png" style="filter: drop-shadow(0 0.3rem 0.5rem rgba(0, 0, 0, 0.6));"></a>
+                    <a href="#home"><img class="w-[40px] h-[40px] mt-[0.5rem] mb-[0.5rem] drop-shadow-2xl cursor-pointer md:w-[50px] md:h-[50px] md:mt-[0.5rem] md:mb-[0.5rem]" src="images/WIKA_LOGO_Vanilla.png"></a>
                 </div>
 
-                <div class="hidden md:flex items-end space-x-[25px] text-tiny text-foggyGrey text-right font-subHeaderFont drop-shadow-heroShadow">
-                    <a href="#home" class="active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Home</a>
-                    <a href="#about-us" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">About</a>
-                    <a href="#industries" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Industries</a>
-                    <a href="#services" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Services</a>
-                    <a href="#translation" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Translation</a>
-                    <a href="#frequently-asked-questions" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">FAQ</a>
-                    <a href="#contact-us" class="border-none hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-foggyGrey">Contact Us</a>
+                <div id="navbar-nav" class="hidden md:flex items-end space-x-[25px] text-tiny text-foggyGrey text-right font-subHeaderFont ">
+                    <a href="#home" class="text-dullBrown active: border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">Home</a>
+                    <a href="#about-us" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">About</a>
+                    <a href="#industries" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">Industries</a>
+                    <a href="#services" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">Services</a>
+                    <a href="#translation" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">Translation</a>
+                    <a href="#frequently-asked-questions" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">FAQ</a>
+                    <a href="#contact-us" class="border-none text-dullBrown hover:border-solid border-[1px] rounded-[3px] px-[8px] py-[3px] border-dullBrown">Contact</a>
                 </div>
-                <button id="nav" class="block md:hidden py-2 px-2 mx-2rounded focus:outline-none hover:bg-foggyGrey group">
+                <div id="nav-items" class="absolute cursor-pointer top-0 -right-full h-screen w-8/12 z-10 bg-foggyGrey border opacity-0 transition-all duration-300">
+                    <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+                        <a href="#home" class="hover:bg-dullBrown py-4 px-6 w-full">Home</a>
+                        <a href="#about-us" class="hover:bg-dullBrown py-4 px-6 w-full">About</a>
+                        <a href="#industries" class="hover:bg-dullBrown py-4 px-6 w-full">Industries</a>
+                        <a href="#services" class="hover:bg-dullBrown py-4 px-6 w-full">Services</a>
+                        <a href="#translation" class="hover:bg-dullBrown py-4 px-6 w-full">Translation</a>
+                        <a href="#frequently-asked-questions" class="hover:bg-dullBrown py-4 px-6 w-full">FAQ</a>
+                        <a href="#contact-us" class="hover:bg-dullBrown py-4 px-6 w-full">Contact Us</a>
+                    </div>
+                </div>
+
+                <button onclick="myFunction()" class="block md:hidden py-2 px-2 mx-2 rounded cursor-pointer focus:outline-none ">
                     <div class="w-6 h-1 bg-dullBrown mb-1"></div>
                     <div class="w-6 h-1 bg-dullBrown mb-1"></div>
                     <div class="w-6 h-1 bg-dullBrown"></div>
-
-                    <div class="absolute top-0 -right-full h-screen w-8/12 z-10 bg-foggyGrey border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-                        <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-                            <a href="#home" class="hover:bg-dullBrown py-4 px-6 w-full">Home</a>
-                            <a href="#about-us" class="hover:bg-dullBrown py-4 px-6 w-full">About</a>
-                            <a href="#industries" class="hover:bg-dullBrown py-4 px-6 w-full">Industries</a>
-                            <a href="#services" class="hover:bg-dullBrown py-4 px-6 w-full">Services</a>
-                            <a href="#translation" class="hover:bg-dullBrown py-4 px-6 w-full">Translation</a>
-                            <a href="#frequently-asked-questions" class="hover:bg-dullBrown py-4 px-6 w-full">FAQ</a>
-                            <a href="#contact-us" class="hover:bg-dullBrown py-4 px-6 w-full">Contact Us</a>
-                        </div>
-                    </div>
                 </button>
+                
             </div>
 
         </nav>
 
-        <section id="hero">
-            <div class="max-w-[100%] px-[16pt] h-[100%] flex flex-col items-center pt-[58%] sm:px-[50px] md:items-start md:px-[64px] md:pt-[26%]">
+        <section id="hero" class="relative">
+            <div class="max-w-[100%] relative px-[16pt] h-[100%] flex flex-col items-center pt-[58%] sm:px-[50px] md:items-start md:px-[64px] md:pt-[26%]">
 
                 <div class="md:w-full">
 
@@ -126,30 +135,30 @@
                     </div>
 
                     <h2 style="animation: movetext 1s 0.6s forwards;"
-                        class="max-w-[100%] text-center text-xl py-[20px] font-HeaderFont font-bold text-dullBrown drop-shadow-heroShadow md:text-left md:text-2xl md:py-[10px]">
+                        class="max-w-[100%] text-center text-xl py-[20px] font-HeaderFont font-bold text-dullBrown  md:text-left md:text-2xl md:py-[10px]">
 
                         Wika Translate
                     </h2>
                     <p style="animation: movetext 1s 0.8s forwards;"
-                       class="text-center text-tiny pb-[20px] font-paragraphTextFont text-foggyGrey leading-[1.25rem] drop-shadow-heroShadow md:max-w-[48%] md:text-left md:text-tiny md:pb-[0.625rem]">
+                       class="text-center text-tiny pb-[20px] font-paragraphTextFont text-foggyGrey leading-[1.25rem]  md:max-w-[48%] md:text-left md:text-tiny md:pb-[0.625rem]">
                                
                         Wika Translate is a fast-growing translation agency providing professional language solutions to businesses and individuals worldwide.
                     </p>
                     <div class="flex flex-col justify-between items-center mt-[10px] pb-[1.5rem] md:flex-row md:pb-[2rem]">
                         <a href="#about-us">
-                            <div style="animation: movetext 1s 0.9s forwards;" 
+                            <div style="-webkit-transition: 0.5s; transition: 0.5s; animation: movetext 1s 0.9s forwards;" 
                              class="flex items-center justify-between text-foggyGrey border-[1px] border-foggyGrey text-tiny font-subHeaderFont sm:border-none md:border-none">
 
                              <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
-                             <button href="#about-us" class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
+                             <button href="#about-us" class="my-[10px] pr-[24px] ">Read More</button>
                         </div>
                         </a>
                         <div class=" md:items-end">
                             <ul class="flex flex-row space-x-[40px] pt-[60px] md:pt-0">   
-                                 <li><a href="https://www.linkedin.com/company/81655771" target="_blank"><img src="images/Linkedin.png" style="animation: movetext 1s 0.9s forwards; width: 20px;"></a></li>
-                                 <li><a href="https://www.instagram.com/wikatranslate" target="_blank"><img src="images/Instagram.png" style="animation: movetext 1s 0.8s forwards; width: 20px;"></a></li>
-                                 <li><a href="https://www.twitter.com/wikatranslate" target="_blank"><img src="images/Twitter.png" style="animation: movetext 1s 0.7s forwards; width: 20px;"></a></li>
-                                 <li><a href="https://www.facebook.com/wikatranslate" target="_blank"><img src="images/Facebook.png" style="animation: movetext 1s 0.6s forwards; width: 20px;"></a></li>
+                                 <li><a href="https://www.linkedin.com/company/81655771" target="_blank"><i class="fa-brands fa-linkedin-in" style="animation: movetext 1s 0.9s forwards; width: 20px; color: rgb(211, 204, 184);"></i></a></li>
+                                 <li><a href="https://www.instagram.com/wikatranslate" target="_blank"><i class="fa-brands fa-instagram" style="animation: movetext 1s 0.8s forwards; width: 20px; color: rgb(211, 204, 184);"></i></a></li>
+                                 <li><a href="https://www.twitter.com/wikatranslate" target="_blank"><i class="fa-brands fa-twitter" style="animation: movetext 1s 0.7s forwards; width: 20px; color: rgb(211, 204, 184);"></i></a></li>
+                                 <li><a href="https://www.facebook.com/wikatranslate" target="_blank"><i class="fa-brands fa-facebook" style="animation: movetext 1s 0.6s forwards; width: 20px; color: rgb(211, 204, 184);"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -183,13 +192,13 @@
                         <div>
 
                             <div data-aos="zoom-in-right">
-                                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                                     
                                     About Us 
                                 </h1>
                             </div>
                             <div data-aos="zoom-out-up">
-                                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem]  drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[3rem]">
+                                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]   md:text-xl md:text-center md:pt-[0.65rem] md:pb-[3rem]">
                 
                                     Home To Language Experts
                                 </h2>
@@ -197,17 +206,17 @@
 
                         </div>
                         <div data-aos="zoom-in-left">
-                            <p class="text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1.25rem] drop-shadow-pageTextShadow md:text-tiny md:text-left md:pb-[0.625rem]">
+                            <p class="text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1.25rem]  md:text-tiny md:text-left md:pb-[0.625rem]">
      
                                 Wika Translate is East Africa’s professional translation provider. we have committed ourselves to pushing the boundaries of language service through the development of smarter and more efficient solutions based on cutting-edge technology and talented people.
                             </p>
                         </div>
                         <a href="#about-us">
                             <div class=" flex justify-center md:justify-end">
-                                <div class="flex items-center text-black border-[1px] border-black text-tiny font-subHeaderFont sm:border-none md:border-none">
+                                <div class="flex items-center text-darkJungleGreen border-[1px] border-black text-tiny font-subHeaderFont sm:border-none md:border-none">
         
                                     <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
-                                    <button class="my-[10px] pr-[24px] drop-shadow-buttonShadow">Read More</button>
+                                    <button class="my-[10px] pr-[24px] ">Read More</button>
                                 </div>
                             </div>
                         </a> 
@@ -222,11 +231,11 @@
     <section id="industries">
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey  md:px-[64px] sm:px-[50px]">
             <div class=" pt-[5%] md:pt-[2rem]">
-                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                             
                     Industries 
                 </h1>
-                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[5rem]">
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[5rem]">
 
                     We help your business expand Globally 
                 </h2>
@@ -234,8 +243,8 @@
             <div>
                 <div class="grid grid-flow-col justify-center items-start grid-rows-5 grid-cols-2 gap-4 md:grid-flow-row md:grid-rows-2 md:grid-cols-5 md:gap-4 md:pb-[4rem]">
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scale" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <line x1="7" y1="20" x2="17" y2="20" />
@@ -247,11 +256,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Legal
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Sworn, notarized, and certified legal document translations and court interpreting services for any case. Our team of legal translators is comprised of experts in every field of law.
                             </p>
 
@@ -259,8 +268,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-bank" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <line x1="3" y1="21" x2="21" y2="21" />
@@ -275,11 +284,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Banking & Finance
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Professional translations for statements of assets and liabilities, bank statements, financial models, and conference interpreting with world-leading, certified language professionals.
                             </p>
 
@@ -287,8 +296,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-hospital" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <line x1="3" y1="21" x2="21" y2="21" />
@@ -300,11 +309,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                             Healthcare
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 As a healthcare provider, you are required to offer the best language services for your multilingual patients. Our certified medical translations and interpreting services will do that for you.
                             </p>
 
@@ -312,8 +321,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-car" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <circle cx="7" cy="17" r="2" />
@@ -323,11 +332,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Automotive
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 From vehicle specs to owners manuals; legal documents to marketing materials; we can translate anything you need to keep your brand expanding across the globe.
                             </p>
 
@@ -335,8 +344,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
@@ -344,11 +353,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Travel
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Translations for a hotel chain, localization for a travel agency, or any language service for the tourism and hospitality industry, we provide 100% accurate, culturally specific translation services that are guaranteed to connect with your target audience.
                             </p>
 
@@ -356,8 +365,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <path d="M4 21c1.147 -4.02 1.983 -8.027 2 -12h6c.017 3.973 .853 7.98 2 12" />
@@ -368,11 +377,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Manufacturing
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Fast, precise, cost-effective technical translation services for your patents, packaging, instructions, and safety materials. Manufacturing translations—by industry leaders, for industry leaders.
                             </p>
 
@@ -380,8 +389,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <rect x="13" y="8" width="8" height="12" rx="1" />
@@ -391,11 +400,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Technology
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 From research paper translations to software localization, we offer your brand a wide range of language services to help you stand out in the tech industry.
                             </p>
 
@@ -403,8 +412,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <circle cx="6" cy="19" r="2" />
@@ -415,11 +424,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 E-Commerce
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Expand your digital brand into international markets with our professional e-business localization and translation services.
                             </p>
 
@@ -427,8 +436,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <rect x="2" y="6" width="20" height="12" rx="2" />
@@ -439,11 +448,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Gaming
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 Video game localization services, including voice over services, manual translations, and UI/UX localization, performed by specialized gaming translators.
                             </p>
 
@@ -451,8 +460,8 @@
                     </div>
 
                     <div class="max-w-full flex flex-col justify-center items-center ">
-                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown shadow-large sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
-                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full shadow-medium bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
+                        <div class="w-[7rem] h-[7rem] rounded-md flex justify-center items-center bg-dullBrown  sm:w-[8rem] sm:h-[8rem] md:w-[9rem] md:h-[9rem] hover:border-dullBrown hover:bg-dullBrown hover:shadow-4xl transition-all ease-out duration-[0.5s]">
+                            <div class="w-[4rem] h-[4rem] flex justify-center items-center rounded-full  bg-foggyGrey sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem]">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <line x1="3" y1="21" x2="21" y2="21" />
@@ -464,11 +473,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center">
-                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem] drop-shadow-pageTextShadow sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
+                            <h3 class="pt-[1rem] mb-[0.5rem] text-center text-small text-Birch font-subHeaderFont font-normal leading-[1.2rem]  sm:text-[1.25rem] sm:mb-[1rem] md:text-[1.25rem] md:mb-[1rem]">
 
                                 Retail
                             </h3>
-                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
+                            <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont font-light text-darkJungleGreen leading-[1rem]  sm:max-w-full md:max-w-full md:text-tiny md:text-center md:pb-[0.625rem]">
                                 If you’re expanding your brand to new markets, you need retail translation services for your physical stores and e-shop localization services for your digital platform.
                             </p>
 
@@ -497,16 +506,16 @@
                 <div class="max-w-[100%] flex flex-col py-[3rem] mx-[2rem]  md:flex-row md:justify-between">
 
                     <div class="pb-[3rem] flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 id="translators" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow md:pb-0 md:text-xl">
+                        <h4 id="translators" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem]  md:pb-0 md:text-xl">
                                 
                             100+ 
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem] ">
-                            <h2 id="database" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 id="database" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] ">
     
                                 Database
                             </h2>
-                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] drop-shadow-heroShadow">       
+                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] ">       
                                     
                                 Passion and dedication
                             </p>
@@ -515,16 +524,16 @@
                     </div> 
     
                     <div class="pb-[3rem] flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 id="accuracy" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
+                        <h4 id="accuracy" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80 leading-[0.5rem]  sm:text-lg md:pb-0 md:text-xl">
                                 
                             100% 
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem]">
-                            <h2 id="rate" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 id="rate" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] ">
     
                                 Accuracy
                             </h2>
-                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] drop-shadow-heroShadow">       
+                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] ">       
                                     
                                 Years of Experience
                             </p>
@@ -533,16 +542,16 @@
                     </div> 
     
                     <div class="flex flex-col items-center md:flex-row md:justify-start md:pb-0 ">
-                        <h4 id="languages" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80  leading-[0.5rem] drop-shadow-pageTextShadow sm:text-lg md:pb-0 md:text-xl">
+                        <h4 id="languages" class="pb-[2rem] pr-[1rem] text-lg font-heroTitleFont font-bold  text-foggyGrey opacity-80  leading-[0.5rem]  sm:text-lg md:pb-0 md:text-xl">
                                 
                             150+  
                         </h4>
                         <div class="flex flex-col items-center space-y-[0.2rem]">
-                            <h2 id="lnggs" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] drop-shadow-pageTextShadow">
+                            <h2 id="lnggs" class="text-center text-small font-HeaderFont font-bold text-foggyGrey leading-[1rem] ">
     
                                 Languages
                             </h2>
-                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] drop-shadow-heroShadow">       
+                            <p class="text-center text-tiny font-subHeaderFont text-lightGrey leading-[0.8rem] ">       
                                     
                                 We see the clear vision 
                             </p>
@@ -561,11 +570,11 @@
     <section id="services">
         <div class="max-w-[100%] overflow-hidden  px-[16pt]  bg-foggyGrey md:px-[64px] sm:px-[50px]">
             <div class="pt-[5%] md:pt-[2rem]">
-                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                             
                     Services 
                 </h1>
-                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
 
                     A Leading Translation Agency
                 </h2>
@@ -585,11 +594,11 @@
                      class="mb-[1rem]  sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
                         <i class="fa-solid fa-language text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Translation 
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         We offer professional translation services in 100+ languages in Legal, Technical, Science, Agriculture and Business Fields Etc..
                     </p>
                 </div> 
@@ -599,11 +608,11 @@
                      class="mb-[1rem] sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
                         <i class="fa-solid fa-headset text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Interpreting
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         Simultaneous and Consecutive interpreting, Hiring interpretation equipment and Escorting Interpretation.
                     </p>
                 </div> 
@@ -613,11 +622,11 @@
                      class="mb-[1rem] sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
                         <i class="fa-solid fa-closed-captioning text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Subtitling
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         Translating spoken dialogue From Transcripts, screenplay, commentary in films and television programs, Video games into written text on the screen.
                     </p>
                 </div>
@@ -627,11 +636,11 @@
                      class="mb-[1rem] sm:mb-[2rem]  md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem]">
                         <i class="fa-solid fa-file-lines text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Transcription
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         We provide transcription services for videos or audio-recordings of any length or any language.
                     </p>
                 </div> 
@@ -641,11 +650,11 @@
                      class="mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem] ">
                         <i class="fa-solid fa-earth-americas text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Localization 
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         We address cultural and non-textual components as well as linguistic issues when adapting a product or service for another country or locale.
                     </p>
                 </div>
@@ -654,11 +663,11 @@
                      class="mb-[1rem] items-center sm:mb-[2rem] md:w-[100%] md:mb-[2rem]">
                     <div class="flex items-center mb-[1rem]">
                         <i class="fa-sharp fa-solid fa-landmark text-lg mr-[0.5rem] text-dullBrown sm:text-lg sm:mr-[1rem] md:text-lg md:mr-[1rem]"></i>
-                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                            <h3 class="text-small mb-[0.1rem] font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
                                 Government 
                             </h3>
                     </div>
-                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow sm:w-[20rem] md:w-[12.5rem] ">
+                    <p class="max-w-[20rem] text-tiny text-justify pb-[20px] font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem]  sm:w-[20rem] md:w-[12.5rem] ">
                         We work with federal, state and local government offices. With trust and outstanding level of confidentiality, we provide high quality services.
                     </p>
                 </div>   
@@ -671,11 +680,11 @@
     <section id="translation">
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey md:px-[64px] sm:px-[50px] md:pb-[5rem]">
             <div class="pt-[5%] md:pt-[2rem]">
-                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                             
                     Translation
                 </h1>
-                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
 
                     Our Essential 5-Step Quality Control
                 </h2>
@@ -683,90 +692,90 @@
             <div class="max-w-full grid grid-flow-row grid-cols-2 pt-[2rem] justify-items-center items-start  gap-[1.5rem] md:grid-flow-col md:grid-rows-2 md:grid-cols-3 md:gap-[2rem]">
 
                 <div class="w-[200px] grid gap-4 text-center justify-items-center">
-                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
                         </svg> 
                     </div>
                     <div class="grid justify-items-center gap-2">
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Translation
                         </h3>
 
-                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
+                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1rem]  sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
                             Your documents are translated accurately to perfection while preserving the meaning.
                         </p>
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-3">
-                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
                         </svg> 
                     </div>
                     <div class="grid justify-items-center gap-2">
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Proofreading
                         </h3>
 
-                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
+                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1rem]  sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
                             Your documents pass through an intense Proofreading to check verbiage, syntax, spelling, & grammar.
                         </p>
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-5">
-                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                         </svg> 
                     </div>
                     <div class="grid justify-items-center gap-2">
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Editing
                         </h3>
 
-                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
+                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1rem]  sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
                             Your documents are edited to match the original copy in order to maintain the original formatting.
                         </p>
                     </div>
                 </div>
                 <div class="w-[200px] grid gap-4 text-center justify-items-center md:order-2">
-                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
                         </svg>  
                     </div>
                     <div class="grid justify-items-center gap-2">
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Review
                         </h3>
 
-                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
+                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1rem]  sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
                             Your documents are thoroughly reviewed to guarantee it meets your requests.
                         </p>
                     </div>
                 </div>
                 <div class="w-[200px] grid col-span-2 gap-4 text-center justify-items-center md:order-4 md:col-auto">
-                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown shadow-large p-4">
+                    <div class="rounded-full border-[1.5px] border-dullBrown bg-dullBrown p-4">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-[2rem] h-[2rem]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
                         </svg>  
                     </div>
                     <div class="grid justify-items-center gap-2">
-                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem] drop-shadow-pageTextShadow sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
+                        <h3 class="text-center text-small text-dullBrown font-subHeaderFont font-medium leading-[1.2rem]  sm:text-base sm:mb-[0.2rem] md:text-base md:mb-[0.2rem]">
 
                             Delivery
                         </h3>
 
-                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
+                        <p class="max-w-[75%] text-center text-tiny pb-[20px] font-paragraphTextFont text-darkJungleGreen leading-[1rem]  sm:max-w-[90%] md:max-w-[100%] md:text-tiny md:text-center md:pb-[0.625rem]">
                             Upon the approval from the project manager, your documents are delivered instantly.
                         </p>
                     </div>
@@ -783,11 +792,11 @@
 
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey md:px-[64px] sm:px-[50px] md:pb-[7rem]">
             <div class="pt-[5%] md:pt-[2rem]">
-                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                             
                     FAQ
                 </h1>
-                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
 
                     What People are curious about.
                 </h2>
@@ -795,74 +804,74 @@
 
             <div class="max-w-full flex justify-center  ">
 
-                <div class="max-w-full px-[5%] pb-[2rem] pt-[3rem] bg-barleyWhite rounded-lg shadow-large">
+                <div class="max-w-full px-[5%] pb-[2rem] pt-[3rem] bg-barleyWhite rounded-lg ">
 
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             How can I trust your translation Services accuracy?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             At Wika Translate we put quality first, and we are very protective when it comes to our reputation. We assign your project to the experienced team of translators in your related field, in order for us to deliver the best services in the industry.
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What’s the difference between a certified and a notarized translation?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             Certified translation refers to translations done, signed and sealed by a professional translator. Notarized translation refers to official documents thoroughly and accurately translated from the source into the target language which are then authenticated by a public notary. We are always a call away if you happen to not be sure of what type of document you need, Contact us at anytime.
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             I have a birth certificate that I want translated and certified. Can you provide this service?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             Yes, Wika Translate provides certified translations for all official documents, such as Degrees, Transcripts, Police clearance, birth/death certificates, Divorce certificates, celibacy and marriage certificates etc.. 
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             How can I send my documents to Wika Translate?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             You can Email your documents to info@wikatranslate.com and we will provide you with a FREE quote in less than 10 minutes.
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             How long will it take for my documents to be translated?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             The time we take to translate your documents will depend on your project size, document complexity and required language(s). We welcome you to contact us to discuss your individual requirements. We’ll always do our best to exceed your expectations, within any deadline.
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What are your payment terms and methods?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             You can pay using your Debit/Credit card with our POS or Mobile Money, worldRemit, checks and bank transfers. Payment is requested in advance.
                         </p>
                     </details>
     
                     <details class="pb-2 rounded-md hover:bg-barleyWhite">
-                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer drop-shadow-pageTextShadow sm:mb-[0.2rem] md:mb-[0.2rem]">
+                        <summary class="flex justify-between p-2 text-start text-tiny text-dullBrown font-subHeaderFont font-normal hover:font-medium leading-[1.2rem] cursor-pointer  sm:mb-[0.2rem] md:mb-[0.2rem]">
                             What currencies do you accept?
                         </summary>
     
-                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-black leading-[1rem] drop-shadow-pageTextShadow">
+                        <p class="w-[90%] px-4 py-2 text-tiny font-paragraphTextFont font-thin text-darkJungleGreen leading-[1rem] ">
                             We accept USD and Rwandan Francs, but we are flexible. Talk to us in case you want other options.
                         </p>
                     </details>
@@ -875,14 +884,78 @@
 
     </section>
 
+    <!-- <section id="career">
+        <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey md:px-[64px] sm:px-[50px] md:pb-[7rem]">
+            <div class="pt-[5%] md:pt-[2rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
+                            
+                    Career
+                </h1>
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+
+                    Find your home with us
+                </h2>
+            </div>
+                <div class="flex flex-row items-center">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                              <h2>Start your journey to a better life with online practical courses</h2>
+
+                              <figure>
+                                   <span><i class="fa fa-users"></i></span>
+                                   <figcaption>
+                                        <h3>Professional Trainers</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa fa-certificate"></i></span>
+                                   <figcaption>
+                                        <h3>International Certifications</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa fa-bar-chart-o"></i></span>
+                                   <figcaption>
+                                        <h3>Free for 3 months</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                   </figcaption>
+                              </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-4 col-sm-12">
+                         <div class="entry-form">
+                              <form action="#" method="post">
+                                   <h2>Signup today</h2>
+                                   <input type="text" name="full name" class="form-control" placeholder="Full name" required="">
+
+                                   <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
+
+                                   <input type="password" name="password" class="form-control" placeholder="Your password" required="">
+
+                                   <button class="submit-btn form-control" id="form-submit">Get started</button>
+                              </form>
+                         </div>
+                    </div>
+
+                </div>
+          </div>
+
+    </section> -->
+
     <section id="our-partners">
         <div class="max-w-[100%] overflow-hidden px-[16pt]  bg-foggyGrey max-h-[100vh] md:px-[64px] sm:px-[50px] md:pb-[7rem]">
             <div class="pt-[5%] md:pt-[2rem]">
-                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-center md:leading-[4rem]">
+                <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-center md:leading-[4rem]">
                             
                     Our Partners
                 </h1>
-                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
+                <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:text-xl md:text-center md:pt-[0.65rem] md:pb-[7rem]">
 
                     We Feel Very Proud For Our Great Achievements
                 </h2>
@@ -917,11 +990,11 @@
         <div class="max-w-[100%] overflow-hidden px-[16pt] bg-foggyGrey min-h-[100vh] sm:px-[50px] md:px-[64px]">
             <div class="flex-none sm:flex sm:flex-col md:flex md:flex-row md:justify-between ">
                 <div class="max-w-[100%] pt-[5%] md:pt-[2rem] sm:max-w-[100%] md:max-w-[50%]">
-                    <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem] drop-shadow-pageTextShadow md:text-5xl md:text-start md:leading-[4rem]">
+                    <h1 class="text-center text-2xl font-heroTitleFont font-bold text-dullBrown leading-[3.4375rem]  md:text-5xl md:text-start md:leading-[4rem]">
                                 
                         Contact Us 
                     </h1>
-                    <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-black leading-[2rem] drop-shadow-pageTextShadow md:max-w-[80%] md:text-xl md:text-start md:pt-[0.65rem] md:pb-[7rem]">
+                    <h2 class="text-center text-lg py-[20px] font-HeaderFont font-bold text-darkJungleGreen leading-[2rem]  md:max-w-[80%] md:text-xl md:text-start md:pt-[0.65rem] md:pb-[7rem]">
     
                         We love our customers, feel free to contact us
                     </h2>
@@ -1009,9 +1082,9 @@
                     </div>
                     
                     <div style="animation: movetext 1s 0.9s forwards;" 
-                         class="flex self-center items-center text-black border-[1px] border-dullBrown text-tiny font-subHeaderFont sm:self-end sm:border-none md:self-end md:border-none">
+                         class="flex self-center items-center text-darkJungleGreen border-[1px] border-dullBrown text-tiny font-subHeaderFont sm:self-end sm:border-none md:self-end md:border-none">
                         <img src="images/Rectangle-1.png" class="cursor-pointer pr-[8px] pl-[16px]">
-                        <button class="py-2 pr-[24px] drop-shadow-buttonShadow">Send Message</button>
+                        <button class="py-2 pr-[24px] ">Send Message</button>
                     </div>       
 
                 </form>
@@ -1025,24 +1098,24 @@
 
     </section>
 
-    <footer class="max-w-[100%] overflow-hidden px-[16pt] bg-dullBrown sm:max-w-[100%] md:h-[39vh] sm:px-[50px] md:px-[64px]">
+    <footer class="max-w-[100%] overflow-hidden px-[16pt] bg-darkJungleGreen sm:max-w-[100%] md:h-[39vh] sm:px-[50px] md:px-[64px]">
 
         <div class="max-w-full flex justify-between items-start flex-col sm:flex-col md:flex-row">
             <div class="max-w-full flex-row align-middle">
                 <a href="#home"><img src="images/Wika_Icon_logo_with_bg.png" class="mt-[16px] pb-[20px] cursor-pointer w-[40px] md:pt-[16px] md:pb-[50px]"></a>
 
-                <p class="max-w-full text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:pt-0 sm:max-w-full md:pt-0 md:max-w-[20rem]">
+                <p class="max-w-full text-tiny pb-[20px] pt-[20px] font-paragraphTextFont text-foggyGrey leading-[1rem]  sm:pt-0 sm:max-w-full md:pt-0 md:max-w-[20rem]">
                     Wika Translate Ltd offers one-stop solutions to your translation needs.
                 </p>
     
                 <div class="md:justify-start md:items-start md:pt-0">
 
                     <ul class="flex flex-row space-x-[40px]">   
-                        <li><a href="https://www.linkedin.com/company/81655771" target="_blank"><img src="images/Linkedin.png" style="animation: movetext 1s 0.9s forwards; width: 20px;"></a></li>
-                        <li><a href="https://www.instagram.com/wikatranslate" target="_blank"><img src="images/Instagram.png" style="animation: movetext 1s 0.8s forwards; width: 20px;"></a></li>
-                        <li><a href="https://www.twitter.com/wikatranslate" target="_blank"><img src="images/Twitter.png" style="animation: movetext 1s 0.7s forwards; width: 20px;"></a></li>
-                        <li><a href="https://www.facebook.com/wikatranslate" target="_blank"><img src="images/Facebook.png" style="animation: movetext 1s 0.6s forwards; width: 20px;"></a></li>
-                   </ul>
+                        <li><a href="https://www.linkedin.com/company/81655771" target="_blank"><i class="fa-brands fa-linkedin-in text-foggyGrey" style="animation: movetext 1s 0.9s forwards; width: 20px;"></i></a></li>
+                        <li><a href="https://www.instagram.com/wikatranslate" target="_blank"><i class="fa-brands fa-instagram text-foggyGrey" style="animation: movetext 1s 0.8s forwards; width: 20px;"></i></a></li>
+                        <li><a href="https://www.twitter.com/wikatranslate" target="_blank"><i class="fa-brands fa-twitter text-foggyGrey" style="animation: movetext 1s 0.7s forwards; width: 20px;"></i></a></li>
+                        <li><a href="https://www.facebook.com/wikatranslate" target="_blank"><i class="fa-brands fa-facebook text-foggyGrey" style="animation: movetext 1s 0.6s forwards; width: 20px;"></i></a></li>       
+                    </ul>
     
                 </div>
     
@@ -1050,7 +1123,7 @@
 
             <div class="">
 
-                    <h3 class="text-small pb-[40px] pt-[30px] font-HeaderFont font-normal leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
+                    <h3 class="text-small pb-[40px] pt-[30px] text-foggyGrey font-HeaderFont font-normal leading-[1.2rem]  sm:text-base md:text-base">
                     
                         Useful Links     
                     </h3>
@@ -1059,17 +1132,17 @@
                 
                     <ul>
     
-                        <li><a href="#home" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Home</a></li>
-                        <li><a href="#contact-us" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Contact Us</a></li>
-                        <li><a href="#about-us" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">About Us</a></li>
-                        <li><a href="#services" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Services</a></li>
+                        <li><a href="#home" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">Home</a></li>
+                        <li><a href="#contact-us" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">Contact Us</a></li>
+                        <li><a href="#about-us" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">About Us</a></li>
+                        <li><a href="#services" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">Services</a></li>
     
                     </ul>
                     <ul class="pl-[6rem] sm:pl-[100%] md:pl-[4rem]">
     
-                        <li><a href="#blog" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Blog</a></li>
-                        <li><a href="#frequently-asked-questions" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">FAQ</a></li>
-                        <li><a href="#termsandconditions" style="color: rgba(56, 52, 41, 0.60); text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px; text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);" href="#">Terms & Conditions</a></li>
+                        <li><a href="#blog" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">Blog</a></li>
+                        <li><a href="#frequently-asked-questions" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">FAQ</a></li>
+                        <li><a href="#termsandconditions" class="text-foggyGrey" style="text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; display: block; list-style: none;  line-height: 23px;" href="#">Terms & Conditions</a></li>
     
                     </ul>
     
@@ -1079,7 +1152,7 @@
 
             <div class="mt-0">
 
-                <h3 class="text-small pb-[50px] mb-[1rem] pt-[30px] font-HeaderFont font-normal leading-[1.2rem] drop-shadow-buttonShadow sm:text-base md:text-base">
+                <h3 class="text-small pb-[50px] mb-[1rem] pt-[30px] text-foggyGrey font-HeaderFont font-normal leading-[1.2rem]  sm:text-base md:text-base">
                     Subscribe To Our Newsletter 
                 </h3>
 
@@ -1089,11 +1162,11 @@
                                name="email"
                                required 
                                placeholder="Email Address"
-                               class="w-full ring-1 ring-lightBlack px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] outline-none focus:ring-1 border-black focus:ring-lightBirch">
-                        <button class="w-[2rem] h-[1.65rem] flex self-end items-center text-tiny bg-black outline-none cursor-pointer border-none font-subHeaderFont font-bold" type="subscribe">
+                               class="w-full ring-1 ring-foggyGrey px-[1rem] text-tiny font-paragraphTextFont bg-transparent py-[0.2rem] outline-none focus:ring-1 border-foggyGrey focus:ring-lightBirch">
+                        <button class="w-[2rem] h-[1.65rem] flex self-end items-center text-tiny bg-foggyGrey outline-none cursor-pointer border-none font-subHeaderFont font-bold" type="subscribe">
 
                             <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="icon icon-tabler icon-tabler-send h-[2rem] px-[0.5rem] py-[0.2rem] hover:stroke-foggyGrey " 
+                                class="icon icon-tabler icon-tabler-send h-[2rem] px-[0.5rem] py-[0.2rem] hover:stroke-darkJungleGreen " 
                                 width="100" 
                                 height="100" 
                                 viewBox="0 0 24 24" 
@@ -1112,7 +1185,7 @@
                     <span id="msg" class=" text-foggyGrey text-[0.5rem] block pt-[10px] "></span>
                 </div>
 
-                <p class="max-w-full text-tiny pt-[5px] font-paragraphTextFont text-black leading-[1rem] drop-shadow-pageTextShadow sm:max-w-full md:max-w-[22rem]">
+                <p class="max-w-full text-tiny pt-[5px] font-paragraphTextFont text-foggyGrey leading-[1rem]  sm:max-w-full md:max-w-[22rem]">
                     Wika Translate Ltd constantly reaches out to translators and interpreters to find the very best.
                 </p>
 
@@ -1125,12 +1198,12 @@
 
             <div class="flex flex-col justify-between items-center sm:pb-[1rem] sm:flex-col md:pb-0 md:flex-row"> 
 
-                <h3 class="text-tiny font-HeaderFont font-thin leading-[1.2rem] drop-shadow-buttonShadow">
+                <h3 class="text-tiny text-foggyGrey font-HeaderFont font-thin leading-[1.2rem] ">
                     
                     Terms of use | Privacy Environmental Policy
                 </h3>
 
-                <h3 class="py-[0.5rem] text-tiny font-HeaderFont font-thin leading-[1.2rem] drop-shadow-buttonShadow sm:py-0 md:py-0">
+                <h3 class="py-[0.5rem] text-tiny text-foggyGrey font-HeaderFont font-thin leading-[1.2rem]  sm:py-0 md:py-0">
                     
                     Copyright &copy; 2019 Wika Translate Ltd. All rights reserved.
                 </h3>
@@ -1149,6 +1222,17 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("nav-items");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
     
 </body>
 </html>
