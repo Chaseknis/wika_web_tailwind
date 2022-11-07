@@ -1837,6 +1837,11 @@ figure {
   background-color: rgb(255 243 197 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-foggyGrey:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 204 184 / var(--tw-bg-opacity));
+}
+
 .hover\:stroke-darkJungleGreen:hover {
   stroke: rgb(31, 31, 31);
 }
@@ -1912,6 +1917,14 @@ figure {
 
 .focus\:ring-lightBirch:focus {
   --tw-ring-color: rgba(56, 52, 41, 0.60);
+}
+
+.group:focus .group-focus\:right-0 {
+  right: 0px;
+}
+
+.group:focus .group-focus\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 480px) {
