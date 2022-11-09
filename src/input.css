@@ -9,10 +9,6 @@ html, body {
     scroll-behavior: smooth;
     color: rgb(31, 31, 31);
 }
-  #custom-navbar #navbar-nav > a:hover,
-  #custom-navbar #navbar-nav > a:focus {
-    background-color: transparent;
-  }
   #career figure {
     display: inline-block;
     vertical-align: top;

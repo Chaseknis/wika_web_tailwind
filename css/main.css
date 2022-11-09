@@ -800,14 +800,6 @@ video {
   width: 5rem;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[32\%\] {
-  width: 32%;
-}
-
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -1510,11 +1502,6 @@ html, body {
   color: rgb(31, 31, 31);
 }
 
-#custom-navbar #navbar-nav > a:hover,
-  #custom-navbar #navbar-nav > a:focus {
-  background-color: transparent;
-}
-
 #career figure {
   display: inline-block;
   vertical-align: top;
@@ -2153,6 +2140,10 @@ figure {
 
   .md\:w-\[12\.5rem\] {
     width: 12.5rem;
+  }
+
+  .md\:w-\[32\%\] {
+    width: 32%;
   }
 
   .md\:max-w-\[60\%\] {
