@@ -64,6 +64,12 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 });
 
+window.onbeforeunload = () => {
+  for(const form of document.querySelector('#form')) {
+    form.reset();
+  }
+}
+
 
 
 // let rootEvent = document.getElementById("rootElement");
