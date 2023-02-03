@@ -2255,6 +2255,10 @@ figure {
     max-width: 40%;
   }
 
+  .md\:max-w-\[\%\] {
+    max-width: %;
+  }
+
   .md\:grid-flow-row {
     grid-auto-flow: row;
   }
