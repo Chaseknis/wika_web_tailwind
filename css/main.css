@@ -1063,6 +1063,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-\[2rem\] {
+  padding: 2rem;
+}
+
 .px-\[16pt\] {
   padding-left: 16pt;
   padding-right: 16pt;
@@ -2036,6 +2040,22 @@ figure {
 
   .md\:h-\[50vh\] {
     height: 50vh;
+  }
+
+  .md\:h-\[5vh\] {
+    height: 5vh;
+  }
+
+  .md\:h-\[45vh\] {
+    height: 45vh;
+  }
+
+  .md\:h-\[4vh\] {
+    height: 4vh;
+  }
+
+  .md\:h-\[42vh\] {
+    height: 42vh;
   }
 
   .md\:w-\[50px\] {
