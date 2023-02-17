@@ -50,7 +50,7 @@ const msg = document.getElementById('msg');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => {
+    .then(() => {
       msg.innerHTML = 'Thank you for subscribing to our newsletter!';
       setTimeout(() => {
         msg.innerHTML = '';
