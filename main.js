@@ -1,76 +1,70 @@
-var counter =document.querySelector("#translators");
-var database =document.querySelector("#database");
+const counter = document.querySelector('#translators');
+const database = document.querySelector('#database');
 
 let count = 1;
 setInterval(() => {
-    if (count < 900) {
-        count++;
-        counter.innerText = count + "+";
-    }
-}, 1)
+  if (count < 900) {
+    count += 1;
+    counter.innerText = `${count}+`;
+  }
+}, 1);
 
-setTimeout (() => {
-    database.innerText = "Database of translators";
-}, 4515)
+setTimeout(() => {
+  database.innerText = 'Database of translators';
+}, 4515);
 
-
-var counters =document.querySelector("#accuracy");
-var databases =document.querySelector("#rate");
+const counters = document.querySelector('#accuracy');
+const databases = document.querySelector('#rate');
 
 let counts = 1;
 setInterval(() => {
-    if (counts < 100) {
-        counts++;
-        counters.innerText = counts + "%";
-    }
-}, 1)
+  if (counts < 100) {
+    counts = count + 1;
+    counters.innerText = `${counts}%`;
+  }
+}, 1);
 
-setTimeout (() => {
-    databases.innerText = "Accuracy Rate";
-}, 451.5)
+setTimeout(() => {
+  databases.innerText = 'Accuracy Rate';
+}, 451.5);
 
-
-var counterz =document.querySelector("#languages");
-var databasez =document.querySelector("#lnggs");
+const counterz = document.querySelector('#languages');
+const databasez = document.querySelector('#lnggs');
 
 let countz = 1;
 setInterval(() => {
-    if (countz < 125) {
-        countz++;
-        counterz.innerText = countz + "%";
-    }
-}, 1)
+  if (countz < 125) {
+    countz = count + 1;
+    counterz.innerText = `${countz}%`;
+  }
+}, 1);
 
 setTimeout(() => {
-    databasez.innerText = "Languages Worldwide";
+  databasez.innerText = 'Languages Worldwide';
 }, 551.5);
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDSoFQBX7Bu0s9ySH4-SPsgGcH4WgHQkDf_cRFwtKy228kB0u/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbybw3kLDod-OFtuzzjIDSoFQBX7Bu0s9ySH4-SPsgGcH4WgHQkDf_cRFwtKy228kB0u/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-      
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Thank you for subscribing to our newsletter!"
-            setTimeout(function () {
-                msg.innerHTML = ""
-            }, 2000)
-            form.reset()
-
-        })
-        .catch(error => console.error('Error!', error.message))
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = 'Thank you for subscribing to our newsletter!';
+      setTimeout(() => {
+        msg.innerHTML = '';
+      }, 2000);
+      form.reset();
+    })
+    .catch((error) => console.error('Error!', error.message));
 });
 
 window.onbeforeunload = () => {
-  for(const form of document.querySelector('#form')) {
+  for (const form of document.querySelector('#form')) {
     form.reset();
   }
-}
-
-
+};
 
 // let rootEvent = document.getElementById("rootElement");
 
@@ -82,7 +76,6 @@ window.onbeforeunload = () => {
 //     e.preventDefault();
 //     e.stopPropagation();
 
-
 // });
 
 // closeNav = function(){
@@ -93,25 +86,22 @@ window.onbeforeunload = () => {
 // };
 
 // rootEvent.addEventListener("click", closeNav);
-// rootEvent.addEventListener("touchend", closeNav);        
-
-
+// rootEvent.addEventListener("touchend", closeNav);
 
 // (function ($) {
 
 //     "use strict";
-  
+
 //       // PRE LOADER
 //       $(window).load(function(){
-//         $('.preloader').fadeOut(1000); // set duration in brackets    
+//         $('.preloader').fadeOut(1000); // set duration in brackets
 //       });
-  
-  
+
 //       // MENU
 //       $('#navbar-navbar-collapse a').on('click',function(){
 //         $("#navbar-navbar-collapse").collapse('hide');
 //       });
-  
+
 //       $(window).scroll(function() {
 //         if ($("#navbar-navbar").offset().top > 50) {
 //           $("#navbar-navbar-fixed-top").addClass("top-nav-collapse");
@@ -119,7 +109,7 @@ window.onbeforeunload = () => {
 //               $("#navbar-navbar-fixed-top").removeClass("top-nav-collapse");
 //             }
 //       });
-  
+
 //       // SMOOTHSCROLL
 //       $(function() {
 //         $('#custom-navbar a, #home a').on('click', function(event) {
@@ -129,8 +119,6 @@ window.onbeforeunload = () => {
 //             }, 1000);
 //               event.preventDefault();
 //         });
-//       });  
-  
-//   })(jQuery);
+//       });
 
-  
+//   })(jQuery);
