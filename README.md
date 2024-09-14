@@ -29,13 +29,12 @@
 # 📖<a name="about-project">Wika Translate Website</a>
 
 
-***Building a responsive portfolio website using HTML/CSS Javascript from a Figma design template***
+***Building a responsive Wika Translate Ltd website using Tailwind CSS aand Javascript***
 
-[Click here for the portfolio presentation video](https://www.loom.com/share/28c29650d8fc49d385239bf842e7bccc)
 
-## 🛠 Built With <a name="built-with">Figma, VSCode, and Github</a>
+## 🛠 Built With <a name="built-with">VSCode, Figma and Github</a>
 
-### <a name="tech-stack">HTML/CSS, Javascript, Github and Figma</a>
+### <a name="tech-stack">HTML/Tailwind CSS, Javascript, Github and Figma</a>
 
 
 <details>
@@ -73,7 +72,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://chaseknis.github.io/)
+- [Live Demo Link](https://www.wikatranslate.net)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
