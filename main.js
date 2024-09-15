@@ -30,16 +30,16 @@ setTimeout (() => {
 }, 451.5)
 
 
-var counterz =document.querySelector("#languages");
-var databasez =document.querySelector("#lnggs");
+// var counterz =document.querySelector("#languages");
+// var databasez =document.querySelector("#lnggs");
 
-let countz = 1;
-setInterval(() => {
-    if (countz < 125) {
-        countz++;
-        counterz.innerText = countz + "%";
-    }
-}, 1)
+// let countz = 1;
+// setInterval(() => {
+//     if (countz < 125) {
+//         countz++;
+//         counterz.innerText = countz + "%";
+//     }
+// }, 1)
 
 setTimeout(() => {
     databasez.innerText = "Languages Worldwide";
